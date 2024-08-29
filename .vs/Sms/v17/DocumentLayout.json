@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Projects\\Sms\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\assets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\assets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +31,8 @@
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\stream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\discipline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\discipline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\projects\\sms\\sms.core\\domain\\entities\\masterdata\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,13 +82,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "Assets.cs",
+              "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Assets.cs",
+              "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Assets.cs",
+              "ToolTip": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Assets.cs",
+              "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Assets.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T12:07:52.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "County.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\County.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\County.cs",
               "ToolTip": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\County.cs",
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\County.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T11:50:47.745Z",
               "EditorCaption": ""
@@ -104,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Discipline.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Discipline.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Discipline.cs",
@@ -112,25 +129,24 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Discipline.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T11:31:25.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T11:31:25.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Department.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Department.cs",
               "ToolTip": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Department.cs",
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Department.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T11:15:36.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
@@ -138,12 +154,11 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:05:20.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T10:05:20.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Stream.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Stream.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Stream.cs",
@@ -151,12 +166,11 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Stream.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:01:01.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T10:01:01.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Teacher.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Teacher.cs",
@@ -164,25 +178,24 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Teacher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T09:49:59.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T09:49:59.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
               "ToolTip": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T09:42:27.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IAuditable.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\IAuditable.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\IAuditable.cs",
@@ -194,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\BaseEntity.cs",
