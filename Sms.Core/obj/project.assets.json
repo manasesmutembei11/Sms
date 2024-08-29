@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Expaq\\source\\repos\\Sms\\Sms.Core\\Sms.Core.csproj",
+      "projectUniqueName": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj",
       "projectName": "Sms.Core",
-      "projectPath": "C:\\Users\\Expaq\\source\\repos\\Sms\\Sms.Core\\Sms.Core.csproj",
+      "projectPath": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj",
       "packagesPath": "C:\\Users\\Expaq\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Expaq\\source\\repos\\Sms\\Sms.Core\\obj\\",
+      "outputPath": "C:\\Projects\\Sms\\Sms.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Expaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
