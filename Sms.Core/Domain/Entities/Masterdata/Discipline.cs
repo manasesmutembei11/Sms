@@ -19,10 +19,10 @@ namespace Sms.Core.Domain.Entities.Masterdata
     }
     public class Discipline : BaseEntity<Guid>
     {
-        public string? Code { get; set; }
-        public string? Name { get; set; }
-        public string? Description {  get; set; }
-        public DisciplineActions? Actions { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+        public string Description {  get; set; }
+        public DisciplineActions Actions { get; set; }
         
     }
 }

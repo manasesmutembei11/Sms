@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sms.Core.Domain.Entities.Masterdata
 {
-    public class Stream : BaseEntity<Guid>
+    public class Room : BaseEntity<Guid>
     {
-        public string? Code { get; set; }
-        public string? Name { get; set; }
-        public string? Description { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
 
     }
 }

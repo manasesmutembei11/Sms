@@ -9,7 +9,7 @@ namespace Sms.Core.Domain.Entities.Masterdata
     public class County : BaseEntity<Guid>
     {
         public int Code { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
 
     }
