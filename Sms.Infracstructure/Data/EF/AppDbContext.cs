@@ -92,7 +92,7 @@ namespace Sms.Infrastructure.Data.EF
 
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            SeedData.Initialize(builder);
+            //SeedData.Initialize(builder);
 
 
 

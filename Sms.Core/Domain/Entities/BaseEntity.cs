@@ -22,9 +22,9 @@ namespace Sms.Core.Domain.Entities
         public T Id { get; set; }
 
         [Required]
-        public DateTime CreatedOn { get; internal set; }
-        public DateTime UpdatedOn { get; internal set; }
+        public DateTime CreatedOn { get; set; }
+        public DateTime UpdatedOn { get; set; }
         [Required]
-        public EntityStatus Status { get; internal set; }
+        public EntityStatus Status { get; set; }
     }
 }

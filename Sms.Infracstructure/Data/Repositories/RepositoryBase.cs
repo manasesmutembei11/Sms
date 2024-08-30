@@ -3,6 +3,7 @@ using Sms.Core.Domain.Repositories;
 using Sms.Core.Domain.Entities;
 using Sms.Core.Domain.Util.Validations;
 using Sms.Infrastructure.Data.EF;
+using Microsoft.EntityFrameworkCore;
 
 namespace Sms.Infrastructure.Data.Repositories
 {
