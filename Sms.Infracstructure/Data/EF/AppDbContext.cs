@@ -6,6 +6,17 @@ using System.Reflection.Emit;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Sms.Core.Domain.Entities.Audit;
+using Microsoft.Extensions.Logging;
+using Sms.Core.Domain.Entities.UserEntities;
+using Sms.Core.Domain.Entities.Configs;
+using Sms.Core.Domain.Entities.Counters;
+using Sms.Core.Domain.Entities.Uploads;
+using Sms.Core.Domain.Entities.Templates;
+using Sms.Core.Domain.Entities.ReportEntities;
 
 namespace Sms.Infrastructure.Data.EF
 {
@@ -44,37 +55,37 @@ namespace Sms.Infrastructure.Data.EF
 
             builder.Entity<User>(b =>
             {
-                b.ToTable("xpa_Users");
+                b.ToTable("sms_Users");
             });
 
             builder.Entity<IdentityUserClaim<Guid>>(b =>
             {
-                b.ToTable("xpa_UserClaims");
+                b.ToTable("sms_UserClaims");
             });
 
             builder.Entity<IdentityUserLogin<Guid>>(b =>
             {
-                b.ToTable("xpa_UserLogins");
+                b.ToTable("sms_UserLogins");
             });
 
             builder.Entity<IdentityUserToken<Guid>>(b =>
             {
-                b.ToTable("xpa_UserTokens");
+                b.ToTable("sms_UserTokens");
             });
 
             builder.Entity<Role>(b =>
             {
-                b.ToTable("xpa_Roles");
+                b.ToTable("sms_Roles");
             });
 
             builder.Entity<IdentityRoleClaim<Guid>>(b =>
             {
-                b.ToTable("xpa_RoleClaims");
+                b.ToTable("sms_RoleClaims");
             });
 
             builder.Entity<IdentityUserRole<Guid>>(b =>
             {
-                b.ToTable("xpa_UserRoles");
+                b.ToTable("sms_UserRoles");
             });
 
 
