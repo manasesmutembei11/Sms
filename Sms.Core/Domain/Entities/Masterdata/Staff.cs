@@ -15,7 +15,9 @@ namespace Sms.Core.Domain.Entities.Masterdata
         public string Email { get; set; }
         public string Address {  get; set; }
         public Guid CountyId { get; set; }
-        public County County { get; set; }
+        public virtual County County { get; set; }
+        public Guid DepartmentId { get; set; }
+        public virtual Department Department { get; set; }
 
 
     }

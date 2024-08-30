@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sms.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b899cba9250980f74d13c26e0e85788c544a165e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe8a91e28deb7aaa4619fa090f3a5b51e663eb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sms.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sms.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

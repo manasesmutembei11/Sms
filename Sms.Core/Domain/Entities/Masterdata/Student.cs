@@ -15,8 +15,8 @@ namespace Sms.Core.Domain.Entities.Masterdata
         public string ParentEmail { get; set; }
         public string ParentPhone { get; set; }
         public string ParentName { get; set; }
-        public Guid StreamId { get; set; }
-        public Room Stream { get; set; }
+        public Guid RoomId { get; set; }
+        public virtual Room Stream { get; set; }
 
     }
 }

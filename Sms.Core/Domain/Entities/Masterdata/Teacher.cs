@@ -24,5 +24,7 @@ namespace Sms.Core.Domain.Entities.Masterdata
         public Type Type { get; set; }
         public Guid SubjectId { get; set; }
         public virtual Subject Subject { get; set; }
+        public Guid DepartmentId { get; set; }
+        public virtual Department Department { get; set; }
     }
 }
