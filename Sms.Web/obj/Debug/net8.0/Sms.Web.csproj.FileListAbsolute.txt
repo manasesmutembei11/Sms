@@ -1,0 +1,8 @@
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.csproj.AssemblyReference.cache
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\spa.proxy.json
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.AssemblyInfoInputs.cache
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.AssemblyInfo.cs
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.csproj.CoreCompileInputs.cache
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.sourcelink.json

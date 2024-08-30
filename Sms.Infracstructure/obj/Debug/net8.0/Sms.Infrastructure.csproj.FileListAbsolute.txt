@@ -1,0 +1,6 @@
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.AssemblyInfo.cs
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.sourcelink.json

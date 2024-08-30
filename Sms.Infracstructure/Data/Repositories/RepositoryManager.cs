@@ -42,12 +42,6 @@ namespace Sms.Infrastructure.Data.Repositories
         private readonly Lazy<ISubjectRepository> _subjectRepository;
         private readonly Lazy<ITeacherRepository> _teacherRepository;
 
-
-
-
-
-
-
         public RepositoryManager(
             ILogger<RepositoryManager> logger,
             AppDbContext context,
@@ -97,12 +91,6 @@ namespace Sms.Infrastructure.Data.Repositories
             _studentRepository = studentRepository;
             _subjectRepository = subjectRepository;
             _teacherRepository = teacherRepository;
-
-            
-
-
-
-
         }
 
         public IReportGroupItemRepository ReportGroupItem => _reportGroupItemRepository.Value;

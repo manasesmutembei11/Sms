@@ -8,7 +8,7 @@ using Sms.Core.Domain.Entities.Counters;
 using Sms.Core.Domain.Repositories.Counters;
 using Sms.Infrastructure.Data.EF;
 
-namespace XpaAsva.Infrastructure.Data.Repositories.Counters
+namespace Sms.Infrastructure.Data.Repositories.Counters
 {
     internal class AppCounterRepository : IAppCounterRepository
     {
