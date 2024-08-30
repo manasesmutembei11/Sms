@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
-using XpaAsva.Core.Domain.Entities.UserEntities;
+using Sms.Core.Domain.Entities.UserEntities;
 
-namespace XpaAsva.Application.Security
+namespace Sms.Application.Security
 {
     public static class UserExtensions
     {

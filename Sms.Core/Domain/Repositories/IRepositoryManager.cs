@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using XpaAsva.Core.Domain.Repositories.Users;
+using Sms.Core.Domain.Repositories.Users;
 
 namespace Sms.Core.Domain.Repositories
 {

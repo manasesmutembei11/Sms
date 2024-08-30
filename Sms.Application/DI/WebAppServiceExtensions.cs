@@ -32,13 +32,13 @@ namespace Sms.Application.DI
 
         }
 
-        public static void AddReportConfigurationServices(this IServiceCollection services)
+      /*  public static void AddReportConfigurationServices(this IServiceCollection services)
         {
             IConfiguration configuration = services.BuildServiceProvider().GetService<IConfiguration>();
             var reportConfig = configuration.GetSection("ReportConfiguration").Get<ReportConfiguration>();
             services.AddSingleton(reportConfig);
 
-        }
+        } */
 
         public static void AddIdentityServices(this IServiceCollection services)
         {

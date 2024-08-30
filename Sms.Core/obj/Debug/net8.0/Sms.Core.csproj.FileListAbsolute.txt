@@ -4,3 +4,10 @@ C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\Sms.Core.AssemblyInfoInputs.cache
 C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\Sms.Core.AssemblyInfo.cs
 C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\Sms.Core.csproj.CoreCompileInputs.cache
 C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\Sms.Core.sourcelink.json
+C:\Projects\Sms\Sms.Core\bin\Debug\net8.0\Sms.Core.deps.json
+C:\Projects\Sms\Sms.Core\bin\Debug\net8.0\Sms.Core.dll
+C:\Projects\Sms\Sms.Core\bin\Debug\net8.0\Sms.Core.pdb
+C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\Sms.Core.dll
+C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\refint\Sms.Core.dll
+C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\Sms.Core.pdb
+C:\Projects\Sms\Sms.Core\obj\Debug\net8.0\ref\Sms.Core.dll

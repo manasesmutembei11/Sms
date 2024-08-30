@@ -112,7 +112,7 @@ try
         }
     });
     //report configuration services
-    builder.Services.AddReportConfigurationServices();
+  //  builder.Services.AddReportConfigurationServices();
 
     // add mapping
     builder.Services.AddAutoMapper((opt, s) =>

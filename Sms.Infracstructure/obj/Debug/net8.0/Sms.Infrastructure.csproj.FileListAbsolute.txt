@@ -4,3 +4,15 @@ C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.Assembly
 C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.AssemblyInfo.cs
 C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.sourcelink.json
+C:\Projects\Sms\Sms.Infracstructure\bin\Debug\net8.0\Sms.Infrastructure.deps.json
+C:\Projects\Sms\Sms.Infracstructure\bin\Debug\net8.0\Sms.Infrastructure.runtimeconfig.json
+C:\Projects\Sms\Sms.Infracstructure\bin\Debug\net8.0\Sms.Infrastructure.dll
+C:\Projects\Sms\Sms.Infracstructure\bin\Debug\net8.0\Sms.Infrastructure.pdb
+C:\Projects\Sms\Sms.Infracstructure\bin\Debug\net8.0\Sms.Core.dll
+C:\Projects\Sms\Sms.Infracstructure\bin\Debug\net8.0\Sms.Core.pdb
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infr.ED8BB374.Up2Date
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.dll
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\refint\Sms.Infrastructure.dll
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.pdb
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\Sms.Infrastructure.genruntimeconfig.cache
+C:\Projects\Sms\Sms.Infracstructure\obj\Debug\net8.0\ref\Sms.Infrastructure.dll
