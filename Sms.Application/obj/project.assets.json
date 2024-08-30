@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/Sms.Core.dll": {}
         }
+      },
+      "Sms.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Sms.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sms.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sms.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../Sms.Core/Sms.Core.csproj",
       "msbuildProject": "../Sms.Core/Sms.Core.csproj"
+    },
+    "Sms.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Sms.Infracstructure/Sms.Infrastructure.csproj",
+      "msbuildProject": "../Sms.Infracstructure/Sms.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Sms.Core >= 1.0.0"
+      "Sms.Core >= 1.0.0",
+      "Sms.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj",
-      "projectName": "Sms.Infrastructure",
-      "projectPath": "C:\\Projects\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Projects\\Sms\\Sms.Application\\Sms.Application.csproj",
+      "projectName": "Sms.Application",
+      "projectPath": "C:\\Projects\\Sms\\Sms.Application\\Sms.Application.csproj",
       "packagesPath": "C:\\Users\\Expaq\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Sms\\Sms.Infracstructure\\obj\\",
+      "outputPath": "C:\\Projects\\Sms\\Sms.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Expaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,6 +75,9 @@
           "projectReferences": {
             "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj": {
               "projectPath": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj"
+            },
+            "C:\\Projects\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj": {
+              "projectPath": "C:\\Projects\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj"
             }
           }
         }
