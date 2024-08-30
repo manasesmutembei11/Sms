@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\Sms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\audit\\audittrailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\audit\\audittrailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\templates\\documenttemplaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\templates\\documenttemplaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\configs\\configrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +19,8 @@
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\caching\\icacheprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\templates\\documenttemplaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\templates\\documenttemplaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\audit\\audittrailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\audit\\audittrailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\projects\\sms\\sms.infracstructure\\data\\repositories\\users\\iusersignaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -286,7 +286,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -314,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ICacheProvider.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Core\\Domain\\Caching\\ICacheProvider.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Caching\\ICacheProvider.cs",
@@ -335,8 +335,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Users\\IUserSignatureRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:59:38.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:59:38.087Z"
             },
             {
               "$type": "Document",
@@ -348,8 +347,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Users\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:59:07.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:59:07.385Z"
             },
             {
               "$type": "Document",
@@ -361,12 +359,11 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Uploads\\UploadTypeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:53:41.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:53:41.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DocumentTemplateRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Infracstructure\\Data\\Repositories\\Templates\\DocumentTemplateRepository.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\Repositories\\Templates\\DocumentTemplateRepository.cs",
@@ -379,33 +376,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "RepositoryManager.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Infracstructure\\Data\\Repositories\\RepositoryManager.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\Repositories\\RepositoryManager.cs",
               "ToolTip": "C:\\Projects\\Sms\\Sms.Infracstructure\\Data\\Repositories\\RepositoryManager.cs",
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\RepositoryManager.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwAUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T12:32:50.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ConfigRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Infracstructure\\Data\\Repositories\\Configs\\ConfigRepository.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\Repositories\\Configs\\ConfigRepository.cs",
               "ToolTip": "C:\\Projects\\Sms\\Sms.Infracstructure\\Data\\Repositories\\Configs\\ConfigRepository.cs",
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Configs\\ConfigRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T12:49:33.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "AuditTrailRepository.cs",
               "DocumentMoniker": "C:\\Projects\\Sms\\Sms.Infracstructure\\Data\\Repositories\\Audit\\AuditTrailRepository.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\Repositories\\Audit\\AuditTrailRepository.cs",
@@ -426,8 +423,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Uploads\\UploadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:53:17.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:53:17.207Z"
             },
             {
               "$type": "Document",
@@ -439,8 +435,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Uploads\\UploadOtherRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:52:51.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:52:51.88Z"
             },
             {
               "$type": "Document",
@@ -452,8 +447,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Uploads\\UploadConfigRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:52:21.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:52:21.814Z"
             },
             {
               "$type": "Document",
@@ -465,8 +459,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Reports\\ReportGroupRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:51:18.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:51:18.886Z"
             },
             {
               "$type": "Document",
@@ -478,8 +471,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Reports\\ReportGroupItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:50:49.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:50:49.744Z"
             },
             {
               "$type": "Document",
@@ -491,8 +483,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Counters\\AppCounterRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:50:24.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:50:24.944Z"
             },
             {
               "$type": "Document",
@@ -504,8 +495,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Providers\\IUserProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:48:52.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:48:52.287Z"
             },
             {
               "$type": "Document",
@@ -517,8 +507,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Uploads\\IUploadTypeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:42:09.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:42:09.155Z"
             },
             {
               "$type": "Document",
@@ -530,8 +519,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Uploads\\IUploadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:41:54.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:41:54.206Z"
             },
             {
               "$type": "Document",
@@ -543,8 +531,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Uploads\\IUploadOtherRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:41:39.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:41:39.334Z"
             },
             {
               "$type": "Document",
@@ -556,8 +543,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Uploads\\IUploadConfigRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:41:05.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:41:05.911Z"
             },
             {
               "$type": "Document",
@@ -569,8 +555,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Templates\\IDocumentTemplateRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:37:38.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:37:38.007Z"
             },
             {
               "$type": "Document",
@@ -582,8 +567,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\IRepositoryManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T08:46:14.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T08:46:14.348Z"
             },
             {
               "$type": "Document",
@@ -595,8 +579,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Reports\\IReportGroupRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:37:13.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:37:13.948Z"
             },
             {
               "$type": "Document",
@@ -608,8 +591,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Reports\\IReportGroupItemRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:36:47.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:36:47.558Z"
             },
             {
               "$type": "Document",
@@ -621,8 +603,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Counters\\IAppCounterRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:36:18.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:36:18.331Z"
             },
             {
               "$type": "Document",
@@ -634,8 +615,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Configs\\IConfigRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:35:59.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:35:59.324Z"
             },
             {
               "$type": "Document",
@@ -647,8 +627,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Audit\\IAuditTrailRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:35:43.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:35:43.597Z"
             },
             {
               "$type": "Document",
@@ -660,8 +639,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Util\\Validations\\ValidationResultInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:25:48.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:25:48.191Z"
             },
             {
               "$type": "Document",
@@ -673,8 +651,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Util\\Validations\\ValidationExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:25:40.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:25:40.405Z"
             },
             {
               "$type": "Document",
@@ -686,8 +663,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Util\\Validations\\ValidationError.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:25:29.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:25:29.988Z"
             },
             {
               "$type": "Document",
@@ -699,8 +675,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Util\\Validations\\DomainValidationException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:25:18.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:25:18.95Z"
             },
             {
               "$type": "Document",
@@ -712,8 +687,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\ReportEntities\\ReportGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T12:11:41.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T12:11:41.975Z"
             },
             {
               "$type": "Document",
@@ -749,8 +723,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:03:40.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T10:03:40.093Z"
             },
             {
               "$type": "Document",
@@ -762,8 +735,7 @@
               "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\RepositoryBase.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAnwCQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T09:46:24.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T09:46:24.495Z"
             },
             {
               "$type": "Document",
@@ -775,8 +747,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T09:13:21.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T09:13:21.547Z"
             },
             {
               "$type": "Document",
