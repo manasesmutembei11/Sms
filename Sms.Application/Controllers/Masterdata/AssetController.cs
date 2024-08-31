@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sms.Application.DTOs.Masterdata;
 
 namespace Sms.Application.Controllers.Masterdata
 {
@@ -38,9 +39,9 @@ namespace Sms.Application.Controllers.Masterdata
         public async Task<IActionResult> GetPagedList([FromQuery] PagingParameters pagingParameters)
         {
 
-            var paged = await _repository.Area.GetPagedListAsync(pagingParameters, true);
-            var data = new PagedList<AreaDTO>(
-                paged.Data.Select(s => _mapper.Map<AreaDTO>(s)).ToList(),
+            var paged = await _repository.Asset.GetPagedListAsync(pagingParameters, true);
+            var data = new PagedList<AssetDTO>(
+                paged.Data.Select(s => _mapper.Map<AssetDTO>(s)).ToList(),
                 paged.MetaData.TotalCount,
                 paged.MetaData.CurrentPage,
                 paged.MetaData.PageSize);
@@ -53,8 +54,8 @@ namespace Sms.Application.Controllers.Masterdata
         {
             try
             {
-                var entity = await _repository.Area.GetByIdAsync(id);
-                return Ok(_mapper.Map<AreaDTO>(entity));
+                var entity = await _repository.Asset.GetByIdAsync(id);
+                return Ok(_mapper.Map<AssetDTO>(entity));
             }
             catch (Exception ex)
             {
@@ -65,26 +66,26 @@ namespace Sms.Application.Controllers.Masterdata
         [HttpPost("Save")]
         [ValidateModel]
         [Authorize(Permissions.MasterData.Add)]
-        public async Task<IActionResult> Save([FromBody] AreaDTO dto)
+        public async Task<IActionResult> Save([FromBody] AssetDTO dto)
         {
             var response = new BasicResponse();
             try
             {
-                response.Message = "Area";
+                response.Message = "Asset";
                 if (dto == null || !ModelState.IsValid)
                 {
                     response.AddError(0, "Invalid model state");
                     return BadRequest(response);
                 }
-                var exist = await _repository.Area.ExistAsync(dto.Id);
-                var entity = _mapper.Map<AreaOfOperation>(dto);
+                var exist = await _repository.Asset.ExistAsync(dto.Id);
+                var entity = _mapper.Map<Asset>(dto);
                 if (!exist)
                 {
-                    _repository.Area.Create(entity);
+                    _repository.Asset.Create(entity);
                 }
                 else
                 {
-                    _repository.Area.Update(entity);
+                    _repository.Asset.Update(entity);
                 }
                 await _repository.SaveAsync();
                 response.Message = "OK";
@@ -124,13 +125,13 @@ namespace Sms.Application.Controllers.Masterdata
             var response = new BasicResponse();
             try
             {
-                var item = await _repository.Area.GetByIdAsync(id);
+                var item = await _repository.Asset.GetByIdAsync(id);
                 if (item == null)
                 {
                     response.Message = "Item not found";
                     return NotFound(response);
                 }
-                _repository.Area.Delete(item);
+                _repository.Asset.Delete(item);
                 await _repository.SaveAsync();
 
                 response.Message = "Item deleted successfully";

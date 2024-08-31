@@ -54,7 +54,7 @@ namespace Sms.Application.Mapping
             CreateMap<DocumentTemplate, DocumentTemplateDTO>()
                 .ForMember(dest => dest.DocumentTemplateTypeName, opt => opt.MapFrom(src => src.DocumentTemplateType.ToDescription()));
 
-
+            CreateMap<Asset, AssetDTO>().ReverseMap();
 
 
 

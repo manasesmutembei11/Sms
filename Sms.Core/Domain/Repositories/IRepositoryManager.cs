@@ -33,6 +33,8 @@ namespace Sms.Core.Domain.Repositories
         IStaffRepository Staff { get; }
         IStudentRepository Student { get; }
         ISubjectRepository Subject { get; }
-        ITeacherRepository Teacher { get; } 
+        ITeacherRepository Teacher { get; }
+
+        Task SaveAsync();
     }
 }
