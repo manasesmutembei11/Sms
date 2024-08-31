@@ -19,6 +19,7 @@ namespace Sms.Infrastructure.Data.EF.Configurations.Masterdata
             builder.Property(u => u.Code).HasMaxLength(50);
             builder.Property(u => u.FirstName).HasMaxLength(100);
             builder.Property(u => u.LastName).HasMaxLength(250);
+            builder.HasOne(c => c.Department).WithMany().HasForeignKey(s => s.DepartmentId).OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
