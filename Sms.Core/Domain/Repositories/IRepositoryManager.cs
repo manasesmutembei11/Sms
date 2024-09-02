@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Sms.Core.Domain.Repositories.Users;
+using Sms.Core.Domain.Repositories.Notifications;
 
 namespace Sms.Core.Domain.Repositories
 {
@@ -24,6 +25,15 @@ namespace Sms.Core.Domain.Repositories
         IUploadConfigRepository UploadConfig { get; }
         IConfigRepository Config { get; }
         IDocumentTemplateRepository DocumentTemplate { get; }
+
+        IAppNotificationRepository Notification { get; }
+        IAppNotificationEmailRepository NotificationEmail { get; }
+        IAppNotificationSmsRepository NotificationSms { get; }
+        IAppNotificationSmsContactRepository NotificationSmsContact { get; }
+        IAppNotificationEmailContactRepository NotificationEmailContact { get; }
+        IOutgoingEmailRepository OutgoingEmail { get; }
+        IOutgoingEmailAttachmentRepository OutgoingEmailAttachment { get; }
+        IAppGroupContactRepository AppGroupContact { get; }
 
         IAssetRepository Asset {  get; }
         ICountyRepository County { get; }

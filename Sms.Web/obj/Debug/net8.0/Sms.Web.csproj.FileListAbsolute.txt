@@ -164,3 +164,4 @@ C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\refint\Sms.Web.dll
 C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.pdb
 C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.genruntimeconfig.cache
 C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\ref\Sms.Web.dll
+C:\Projects\Sms\Sms.Web\obj\Debug\net8.0\Sms.Web.MvcApplicationPartsAssemblyInfo.cs

@@ -23,6 +23,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Sms.Infrastructure.Data.Repositories.Counters;
 using Sms.Infrastructure.Data.Repositories.Masterdata;
+using Sms.Core.Domain.Repositories.Users;
+using Sms.Infrastructure.Data.Repositories.Users;
+using Sms.Core.Domain.Email;
 
 namespace Sms.Infrastructure.DI
 {
@@ -51,6 +54,11 @@ namespace Sms.Infrastructure.DI
             //builder.RegisterType<ServiceForHandler>().InstancePerOwned<MessageHandler>();
             //services
             builder.RegisterType<DocumentTemplateRepository>().As<IDocumentTemplateRepository>();
+
+            builder.RegisterType<EmailSender>().As<IEmailSender>();
+
+            builder.RegisterType<UserSignatureRepository>().As<IUserSignatureRepository>();
+            builder.RegisterType<UserRepository>().As<IUserRepository>();
             //masterdata repositories
             builder.RegisterType<AssetRepository>().As<IAssetRepository>();
             builder.RegisterType<CountyRepository>().As<ICountyRepository>();
@@ -60,27 +68,12 @@ namespace Sms.Infrastructure.DI
             builder.RegisterType<StaffRepository>().As<IStaffRepository>();
             builder.RegisterType<StudentRepository>().As<IStudentRepository>();
             builder.RegisterType<SubjectRepository>().As<ISubjectRepository>();
-            builder.RegisterType<TeacherRepository>().As<TeacherRepository>();
+            builder.RegisterType<TeacherRepository>().As<ITeacherRepository>();
           
             //manager
             builder.RegisterType<RepositoryManager>().As<IRepositoryManager>();
 
             //services
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }

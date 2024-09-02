@@ -13,6 +13,7 @@ using Sms.Core.Domain.Repositories.Uploads;
 using Sms.Core.Domain.Repositories.Reports;
 using Sms.Core.Domain.Repositories.Users;
 using Sms.Core.Domain.Repositories.Masterdata;
+using Sms.Core.Domain.Repositories.Notifications;
 
 namespace Sms.Infrastructure.Data.Repositories
 {
@@ -31,6 +32,15 @@ namespace Sms.Infrastructure.Data.Repositories
         private readonly Lazy<IUploadConfigRepository> _uploadConfigRepository;
         private readonly Lazy<IConfigRepository> _configRepository;
         private readonly Lazy<IDocumentTemplateRepository> _documentTemplateRepository;
+
+        private readonly Lazy<IAppNotificationRepository> _appNotificationRepository;
+        private readonly Lazy<IAppNotificationEmailRepository> _appNotificationEmailRepository;
+        private readonly Lazy<IAppNotificationSmsRepository> _appNotificationSmsRepository;
+        private readonly Lazy<IAppNotificationSmsContactRepository> _appNotificationSmsContactRepository;
+        private readonly Lazy<IAppNotificationEmailContactRepository> _appNotificationEmailContactRepository;
+        private readonly Lazy<IOutgoingEmailRepository> _outgoingEmailRepository;
+        private readonly Lazy<IOutgoingEmailAttachmentRepository> _outgoingEmailAttachmentRepository;
+        private readonly Lazy<IAppGroupContactRepository> _appGroupContactRepository;
 
         private readonly Lazy<IAssetRepository> _assetRepository;
         private readonly Lazy<ICountyRepository> _countyRepository;
@@ -57,6 +67,15 @@ namespace Sms.Infrastructure.Data.Repositories
             Lazy<IConfigRepository> configRepository,
             Lazy<IDocumentTemplateRepository> documentTemplateRepository,
 
+            Lazy<IAppNotificationRepository> appNotificationRepository,
+            Lazy<IAppNotificationEmailRepository> appNotificationEmailRepository,
+            Lazy<IAppNotificationSmsRepository> appNotificationSmsRepository,
+            Lazy<IAppNotificationSmsContactRepository> appNotificationSmsContactRepository,
+            Lazy<IAppNotificationEmailContactRepository> appNotificationEmailContactRepository,
+            Lazy<IOutgoingEmailRepository> outgoingEmailRepository,
+            Lazy<IOutgoingEmailAttachmentRepository> outgoingEmailAttachmentRepository,
+            Lazy<IAppGroupContactRepository> appGroupContactRepository,
+
             Lazy<IAssetRepository> assetRepository,
             Lazy<ICountyRepository> countyRepository,
             Lazy<IDepartmentRepository> departmentRepository,
@@ -82,6 +101,15 @@ namespace Sms.Infrastructure.Data.Repositories
             _userSignatureRepository = userSignatureRepository;
             _userRepository = userRepository;
 
+            _appNotificationRepository = appNotificationRepository;
+            _appNotificationEmailRepository = appNotificationEmailRepository;
+            _appNotificationSmsRepository = appNotificationSmsRepository;
+            _appNotificationSmsContactRepository = appNotificationSmsContactRepository;
+            _appNotificationEmailContactRepository = appNotificationEmailContactRepository;
+            _outgoingEmailRepository = outgoingEmailRepository;
+            _outgoingEmailAttachmentRepository = outgoingEmailAttachmentRepository;
+            _appGroupContactRepository = appGroupContactRepository;
+
             _assetRepository = assetRepository;
             _countyRepository = countyRepository;
             _departmentRepository = departmentRepository;
@@ -101,6 +129,16 @@ namespace Sms.Infrastructure.Data.Repositories
         public IUploadConfigRepository UploadConfig => _uploadConfigRepository.Value;
         public IConfigRepository Config => _configRepository.Value;
         public IDocumentTemplateRepository DocumentTemplate => _documentTemplateRepository.Value;
+
+        public IAppNotificationRepository Notification => _appNotificationRepository.Value;
+        public IAppNotificationEmailRepository NotificationEmail => _appNotificationEmailRepository.Value;
+        public IAppNotificationSmsRepository NotificationSms => _appNotificationSmsRepository.Value;
+        public IAppNotificationSmsContactRepository NotificationSmsContact => _appNotificationSmsContactRepository.Value;
+        public IAppNotificationEmailContactRepository NotificationEmailContact => _appNotificationEmailContactRepository.Value;
+        public IOutgoingEmailRepository OutgoingEmail => _outgoingEmailRepository.Value;
+        public IOutgoingEmailAttachmentRepository OutgoingEmailAttachment => _outgoingEmailAttachmentRepository.Value;
+        public IAppGroupContactRepository AppGroupContact => _appGroupContactRepository.Value;
+
         public IUserSignatureRepository UserSignature => _userSignatureRepository.Value;
         public IUserRepository User => _userRepository.Value;
 

@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Projects\\Sms\\Sms.Application\\Sms.Application.csproj",
         "projectName": "Sms.Application",
         "projectPath": "C:\\Projects\\Sms\\Sms.Application\\Sms.Application.csproj",
-        "packagesPath": "C:\\Users\\Expaq\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\Sms\\Sms.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Expaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -100,11 +100,11 @@
         "projectUniqueName": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj",
         "projectName": "Sms.Core",
         "projectPath": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj",
-        "packagesPath": "C:\\Users\\Expaq\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\Sms\\Sms.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Expaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -161,7 +161,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -171,11 +171,11 @@
         "projectUniqueName": "C:\\Projects\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj",
         "projectName": "Sms.Infrastructure",
         "projectPath": "C:\\Projects\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Expaq\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\Sms\\Sms.Infracstructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Expaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -268,7 +268,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -278,11 +278,11 @@
         "projectUniqueName": "C:\\Projects\\Sms\\Sms.Web\\Sms.Web.csproj",
         "projectName": "Sms.Web",
         "projectPath": "C:\\Projects\\Sms\\Sms.Web\\Sms.Web.csproj",
-        "packagesPath": "C:\\Users\\Expaq\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\Sms\\Sms.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Expaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -368,7 +368,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
