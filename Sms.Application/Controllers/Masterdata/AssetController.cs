@@ -16,6 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Sms.Application.DTOs.Masterdata;
+using Sms.Core.Domain.Entities.Masterdata;
 
 namespace Sms.Application.Controllers.Masterdata
 {
@@ -104,18 +105,6 @@ namespace Sms.Application.Controllers.Masterdata
                 response.Message = "OK";
                 return StatusCode(500, response);
             }
-        }
-
-        [HttpGet("lookuplist")]
-        public async Task<IActionResult> GetLookupList()
-        {
-            //var user = _userProvider.User;
-            var predicate = PredicateBuilder.New<AreaOfOperation>(true);
-
-            var data = await _repository.Area
-                .FindByCondition(predicate, false)
-                .OrderBy(s => s.Name).Select(s => new LookupItem<Guid>(s.Id, s.Name, s.Code)).ToListAsync();
-            return Ok(data);
         }
 
         [HttpDelete("Delete/{id}")]

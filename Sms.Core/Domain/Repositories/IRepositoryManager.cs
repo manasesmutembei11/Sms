@@ -12,7 +12,7 @@ using Sms.Core.Domain.Repositories.Users;
 
 namespace Sms.Core.Domain.Repositories
 {
-    public class IRepositoryManager
+    public interface IRepositoryManager
     {
         IUserSignatureRepository UserSignature { get; }
         IUserRepository User { get; }

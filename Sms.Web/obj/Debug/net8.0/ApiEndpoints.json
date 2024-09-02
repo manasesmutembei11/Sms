@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.AssetController",
+    "Method": "GetById",
+    "RelativePath": "api/Asset/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.AssetController",
+    "Method": "Delete",
+    "RelativePath": "api/Asset/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.AssetController",
+    "Method": "GetPagedList",
+    "RelativePath": "api/Asset/pagedlist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.AssetController",
+    "Method": "Save",
+    "RelativePath": "api/Asset/Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Sms.Application.DTOs.Masterdata.AssetDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sms.Application.Controllers.AuthController",
     "Method": "EmailConfirmation",
     "RelativePath": "api/Auth/EmailConfirmation",
@@ -240,26 +314,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Sms.Web.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Sms.Web.WeatherForecast, Sms.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

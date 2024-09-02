@@ -54,18 +54,14 @@ namespace Sms.Application.Mapping
             CreateMap<DocumentTemplate, DocumentTemplateDTO>()
                 .ForMember(dest => dest.DocumentTemplateTypeName, opt => opt.MapFrom(src => src.DocumentTemplateType.ToDescription()));
 
-            CreateMap<Asset, AssetDTO>().ReverseMap();
+            CreateMap<Asset, AssetDTO>().ReverseMap()
+                .ForMember(x => x.Department, opt => opt.Ignore());
 
 
 
 
 
         }
-
-
-
-
-
             private void AfterMap(UploadType src, UploadTypeDTO dest)
             {
                 var itemsIn = !string.IsNullOrWhiteSpace(src.FileExtensions) ? src.FileExtensions.Split('|').ToList() : new List<string>() { };
