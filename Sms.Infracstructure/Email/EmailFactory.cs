@@ -3,9 +3,8 @@ using Sms.Core.Domain.Email;
 using Sms.Core.Domain.Entities.Notifications;
 using Sms.Core.Domain.Entities.Templates;
 using Sms.Core.Domain.Repositories;
-using Sms.Core.Domain.Templates;
 
-namespace XpaGIQ.Infrastructure.Email;
+namespace Sms.Infrastructure.Email;
 
 internal class EmailFactory : IEmailFactory
 {

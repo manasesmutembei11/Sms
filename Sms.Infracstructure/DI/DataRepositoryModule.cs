@@ -26,6 +26,10 @@ using Sms.Infrastructure.Data.Repositories.Masterdata;
 using Sms.Core.Domain.Repositories.Users;
 using Sms.Infrastructure.Data.Repositories.Users;
 using Sms.Core.Domain.Email;
+using Sms.Core.Domain.Repositories.Notifications;
+using Sms.Infrastructure.Data.Repositories.Notifications;
+using Sms.Infrastructure.Email;
+using Sms.Infrastructure.Caching;
 
 namespace Sms.Infrastructure.DI
 {
@@ -35,7 +39,7 @@ namespace Sms.Infrastructure.DI
         {
             //Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2VVhkQlFadVdJXGFWfVJpTGpQdk5xdV9DaVZUTWY/P1ZhSXxQdkdiXX5ecnJWRGNeV0U=");
 
-
+            builder.RegisterType<DefaultCacheProvider>().As<ICacheProvider>().SingleInstance();
             //reports
             builder.RegisterType<ReportGroupRepository>().As<IReportGroupRepository>();
             builder.RegisterType<ReportGroupItemRepository>().As<IReportGroupItemRepository>();
@@ -55,7 +59,17 @@ namespace Sms.Infrastructure.DI
             //services
             builder.RegisterType<DocumentTemplateRepository>().As<IDocumentTemplateRepository>();
 
+            builder.RegisterType<AppNotificationRepository>().As<IAppNotificationRepository>();
+            builder.RegisterType<AppNotificationEmailRepository>().As<IAppNotificationEmailRepository>();
+            builder.RegisterType<AppNotificationSmsRepository>().As<IAppNotificationSmsRepository>();
+            builder.RegisterType<AppNotificationSmsContactRepository>().As<IAppNotificationSmsContactRepository>();
+            builder.RegisterType<AppNotificationEmailContactRepository>().As<IAppNotificationEmailContactRepository>();
+            builder.RegisterType<OutgoingEmailRepository>().As<IOutgoingEmailRepository>();
+            builder.RegisterType<OutgoingEmailAttachmentRepository>().As<IOutgoingEmailAttachmentRepository>();
+            builder.RegisterType<AppGroupContactRepository>().As<IAppGroupContactRepository>();
+
             builder.RegisterType<EmailSender>().As<IEmailSender>();
+            builder.RegisterType<EmailFactory>().As<IEmailFactory>();
 
             builder.RegisterType<UserSignatureRepository>().As<IUserSignatureRepository>();
             builder.RegisterType<UserRepository>().As<IUserRepository>();

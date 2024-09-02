@@ -7,7 +7,7 @@ using Sms.Core.Domain.Repositories.Configs;
 using Sms.Core.Domain.Entities.Configs;
 using Sms.Core.Domain.Util;
 
-namespace XpaGIQ.Infrastructure.Email;
+namespace Sms.Infrastructure.Email;
 internal class EmailSender : IEmailSender
 {
     private readonly ILogger<EmailSender> _logger;
