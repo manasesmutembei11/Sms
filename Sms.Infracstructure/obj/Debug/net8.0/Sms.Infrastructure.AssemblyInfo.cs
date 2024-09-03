@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sms.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df1e7ac331fd742cd7958a491df4da2746c8162c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7111c29fab6292651584c342d7a61520c5fd0f3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sms.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sms.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

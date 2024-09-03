@@ -60,7 +60,7 @@ namespace Sms.Application.Mapping
             CreateMap<Department, DepartmentDTO>().ReverseMap();
             CreateMap<County, CountyDTO>().ReverseMap();
             CreateMap<Discipline, DisciplineDTO>()
-                  .ForMember(dest => dest.DisciplineActionName, opt => opt.MapFrom(src => src.Actions.ToDescription())).ReverseMap();
+                .ForMember(dest => dest.DisciplineActionName, opt => opt.MapFrom(src => src.Actions.ToDescription())).ReverseMap();
             CreateMap<Room, RoomDTO>()
                 .ForMember(dest => dest.StudentName, opt => opt.MapFrom(src => src.Student.FirstName)).ReverseMap()
                 .ForMember(x => x.Student, opt => opt.Ignore());
@@ -69,6 +69,16 @@ namespace Sms.Application.Mapping
                .ForMember(dest => dest.CountyName, opt => opt.MapFrom(src => src.County.Name)).ReverseMap()
                .ForMember(x => x.Department, opt => opt.Ignore())
                .ForMember(x => x.County, opt => opt.Ignore());
+            CreateMap<Student, StudentDTO>()
+               .ForMember(dest => dest.RoomName, opt => opt.MapFrom(src => src.Stream.Name)).ReverseMap()
+               .ForMember(x => x.Stream, opt => opt.Ignore());
+            CreateMap<Subject, SubjectDTO>().ReverseMap();
+            CreateMap<Teacher, TeacherDTO>()
+               .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.Name))
+               .ForMember(dest => dest.TypeName, opt => opt.MapFrom(src => src.Type.ToDescription()))
+               .ForMember(dest => dest.SubjectName, opt => opt.MapFrom(src => src.Subject.Name)).ReverseMap()
+               .ForMember(x => x.Department, opt => opt.Ignore())
+               .ForMember(x => x.Subject, opt => opt.Ignore());
         }
             private void AfterMap(UploadType src, UploadTypeDTO dest)
             {
