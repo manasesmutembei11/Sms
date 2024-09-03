@@ -458,8 +458,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -468,7 +472,7 @@
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
               "ToolTip": "C:\\Projects\\Sms\\Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
               "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAHEAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T08:46:22.923Z",
               "EditorCaption": ""
@@ -483,8 +487,7 @@
               "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:37:17.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T08:37:17.162Z"
             },
             {
               "$type": "Document",
@@ -496,8 +499,7 @@
               "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwGMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:32:37.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T08:32:37.524Z"
             },
             {
               "$type": "Document",
@@ -509,8 +511,7 @@
               "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:29:40.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T08:29:40.348Z"
             },
             {
               "$type": "Document",
@@ -522,8 +523,7 @@
               "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAkwG0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:20:51.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T08:20:51.119Z"
             },
             {
               "$type": "Document",
@@ -535,8 +535,7 @@
               "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\StudentDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:16:54.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T08:16:54.637Z"
             },
             {
               "$type": "Document",
@@ -548,8 +547,7 @@
               "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T19:11:08.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T19:11:08.939Z"
             },
             {
               "$type": "Document",
@@ -561,8 +559,7 @@
               "RelativeToolTip": "Sms.Application\\Mapping\\DTOMappingProfile.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:42:59.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T08:42:59.785Z"
             },
             {
               "$type": "Document",
@@ -574,8 +571,7 @@
               "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\StaffDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T07:25:47.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T07:25:47.259Z"
             },
             {
               "$type": "Document",
@@ -587,8 +583,7 @@
               "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\StaffController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAwHUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T07:31:25.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T07:31:25.141Z"
             },
             {
               "$type": "Document",
@@ -612,8 +607,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Teacher.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T09:49:59.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T09:49:59.007Z"
             },
             {
               "$type": "Document",
@@ -637,8 +631,7 @@
               "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\AssetDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T05:45:47.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T05:45:47.128Z"
             },
             {
               "$type": "Document",
@@ -650,8 +643,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T09:42:27.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T09:42:27.736Z"
             },
             {
               "$type": "Document",
@@ -699,8 +691,7 @@
               "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:05:20.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T10:05:20.704Z"
             },
             {
               "$type": "Document",

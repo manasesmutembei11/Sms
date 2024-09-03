@@ -1,0 +1,9 @@
+.vs/
+.angular
+bin
+obj
+packages
+*.rdl.data
+*.rptproj.rsuser
+dist
+
