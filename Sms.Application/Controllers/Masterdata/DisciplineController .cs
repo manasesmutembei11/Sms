@@ -23,12 +23,12 @@ namespace Sms.Application.Controllers.Masterdata
     [Route("api/[controller]")]
     [ApiController]
    // [Authorize]
-    public class AssetController : ControllerBase
+    public class DisciplineController : ControllerBase
     {
         private readonly IRepositoryManager _repository;
         private readonly IMapper _mapper;
 
-        public AssetController(IRepositoryManager repository, IMapper mapper)
+        public DisciplineController(IRepositoryManager repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
@@ -40,9 +40,9 @@ namespace Sms.Application.Controllers.Masterdata
         public async Task<IActionResult> GetPagedList([FromQuery] PagingParameters pagingParameters)
         {
 
-            var paged = await _repository.Asset.GetPagedListAsync(pagingParameters, true);
-            var data = new PagedList<AssetDTO>(
-                paged.Data.Select(s => _mapper.Map<AssetDTO>(s)).ToList(),
+            var paged = await _repository.Discipline.GetPagedListAsync(pagingParameters, true);
+            var data = new PagedList<DisciplineDTO>(
+                paged.Data.Select(s => _mapper.Map<DisciplineDTO>(s)).ToList(),
                 paged.MetaData.TotalCount,
                 paged.MetaData.CurrentPage,
                 paged.MetaData.PageSize);
@@ -55,8 +55,8 @@ namespace Sms.Application.Controllers.Masterdata
         {
             try
             {
-                var entity = await _repository.Asset.GetByIdAsync(id);
-                return Ok(_mapper.Map<AssetDTO>(entity));
+                var entity = await _repository.Discipline.GetByIdAsync(id);
+                return Ok(_mapper.Map<DisciplineDTO>(entity));
             }
             catch (Exception ex)
             {
@@ -67,26 +67,26 @@ namespace Sms.Application.Controllers.Masterdata
         [HttpPost("Save")]
         // [ValidateModel]
        // [Authorize(Permissions.MasterData.Add)]
-        public async Task<IActionResult> Save([FromBody] AssetDTO dto)
+        public async Task<IActionResult> Save([FromBody] DisciplineDTO dto)
         {
             var response = new BasicResponse();
             try
             {
-                response.Message = "Asset";
+                response.Message = "Discipline";
                 if (dto == null || !ModelState.IsValid)
                 {
                     response.AddError(0, "Invalid model state");
                     return BadRequest(response);
                 }
-                var exist = await _repository.Asset.ExistAsync(dto.Id);
-                var entity = _mapper.Map<Asset>(dto);
+                var exist = await _repository.Discipline.ExistAsync(dto.Id);
+                var entity = _mapper.Map<Discipline>(dto);
                 if (!exist)
                 {
-                    _repository.Asset.Create(entity);
+                    _repository.Discipline.Create(entity);
                 }
                 else
                 {
-                    _repository.Asset.Update(entity);
+                    _repository.Discipline.Update(entity);
                 }
                 await _repository.SaveAsync();
                 response.Message = "OK";
@@ -114,13 +114,13 @@ namespace Sms.Application.Controllers.Masterdata
             var response = new BasicResponse();
             try
             {
-                var item = await _repository.Asset.GetByIdAsync(id);
+                var item = await _repository.Discipline.GetByIdAsync(id);
                 if (item == null)
                 {
                     response.Message = "Item not found";
                     return NotFound(response);
                 }
-                _repository.Asset.Delete(item);
+                _repository.Discipline.Delete(item);
                 await _repository.SaveAsync();
 
                 response.Message = "Item deleted successfully";

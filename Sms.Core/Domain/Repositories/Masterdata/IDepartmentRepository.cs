@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Sms.Core.Domain.Repositories.Masterdata
 {
-    public interface IDepartmentRepository
+    public interface IDepartmentRepository : IRepositoryBase<Department, Guid>
     {
         Task<PagedList<Department>> GetPagedListAsync(PagingParameters pagingParameters, bool trackChanges);
     }

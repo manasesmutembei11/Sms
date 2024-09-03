@@ -57,10 +57,13 @@ namespace Sms.Application.Mapping
             CreateMap<Asset, AssetDTO>().ReverseMap()
                 .ForMember(x => x.Department, opt => opt.Ignore());
 
-
-
-
-
+            CreateMap<Department, DepartmentDTO>().ReverseMap();
+            CreateMap<County, CountyDTO>().ReverseMap();
+            CreateMap<Discipline, DisciplineDTO>()
+                  .ForMember(dest => dest.DisciplineActionName, opt => opt.MapFrom(src => src.Actions.ToDescription())).ReverseMap();
+            CreateMap<Room, RoomDTO>()
+                .ForMember(dest => dest.StudentName, opt => opt.MapFrom(src => src.Student.FirstName)).ReverseMap()
+                .ForMember(x => x.Student, opt => opt.Ignore());
         }
             private void AfterMap(UploadType src, UploadTypeDTO dest)
             {
