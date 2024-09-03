@@ -1,7 +1,7 @@
 import { Directive, ElementRef, HostListener, OnInit, Optional, Renderer2, Self } from '@angular/core';
 import intlTelInput from 'intl-tel-input';
 
-import { ControlValueAccessor, NgControl, NG_VALIDATORS} from '@angular/forms';
+import { ControlValueAccessor, NgControl, NG_VALIDATORS } from '@angular/forms';
 import { PhoneNumber, PhoneNumberFormat, PhoneNumberUtil } from 'google-libphonenumber';
 
 
@@ -22,10 +22,10 @@ import { phoneNumberValidator } from '../custom-validators/phone-number-validato
   ]
 
 })
-export class TelInputDirective implements ControlValueAccessor , OnInit{
+export class TelInputDirective implements ControlValueAccessor, OnInit {
 
   //Obosolute
-   phoneNumberUtil = PhoneNumberUtil.getInstance();
+  phoneNumberUtil = PhoneNumberUtil.getInstance();
   iti: any;
   value?: IntelPhoneNumber;
   disabled = false;
@@ -38,10 +38,10 @@ export class TelInputDirective implements ControlValueAccessor , OnInit{
 
   ) {
     this.control.valueAccessor = this;
-debugger
+    debugger
     this.iti = intlTelInput(el.nativeElement, {
       initialCountry: "ke",
-      preferredCountries: ['ke'],
+      // preferredCountries: ['ke'],
 
     });
 
@@ -51,18 +51,18 @@ debugger
 
     this.el.nativeElement.addEventListener("countrychange", () => {
 
-      let p:string=this.value ?this.value?.phoneNumber : '';
+      let p: string = this.value ? this.value?.phoneNumber : '';
       var countryInfo = this.iti.getSelectedCountryData();
-       var phone=  this.getParsedNumber(p,countryInfo.iso2!);
-       if(phone){
+      var phone = this.getParsedNumber(p, countryInfo.iso2!);
+      if (phone) {
 
-         var national=phone.getNationalNumber();
-         if(national){
-          p=national.toString()
-         }
+        var national = phone.getNationalNumber();
+        if (national) {
+          p = national.toString()
+        }
 
 
-       }
+      }
 
 
       this.onInput(p)
@@ -71,27 +71,27 @@ debugger
   private removeDialCode(phoneNumber: string): string {
     debugger;
     var countryInfo = this.iti.getSelectedCountryData();
-		const number = this.getParsedNumber(phoneNumber, countryInfo.dialCode!);
-		phoneNumber = this.phoneNumberUtil.format(
-			number,
-			PhoneNumberFormat.INTERNATIONAL
-		);
-		if (phoneNumber.startsWith('+') ) {
-			phoneNumber = phoneNumber.substr(phoneNumber.indexOf(' ') + 1);
-		}
-		return phoneNumber;
-	}
+    const number = this.getParsedNumber(phoneNumber, countryInfo.dialCode!);
+    phoneNumber = this.phoneNumberUtil.format(
+      number,
+      PhoneNumberFormat.INTERNATIONAL
+    );
+    if (phoneNumber.startsWith('+')) {
+      phoneNumber = phoneNumber.substr(phoneNumber.indexOf(' ') + 1);
+    }
+    return phoneNumber;
+  }
   private getParsedNumber(
-		phoneNumber: string,
-		countryCode: string
-	): PhoneNumber {
-		let number: PhoneNumber;
-		try {
-			number = this.phoneNumberUtil.parse(phoneNumber, countryCode.toUpperCase());
-		} catch (e) {}
-		// @ts-ignore
+    phoneNumber: string,
+    countryCode: string
+  ): PhoneNumber {
+    let number: PhoneNumber;
+    try {
+      number = this.phoneNumberUtil.parse(phoneNumber, countryCode.toUpperCase());
+    } catch (e) { }
+    // @ts-ignore
     return number;
-	}
+  }
 
 
   registerOnValidatorChange?(fn: () => void): void {
@@ -99,7 +99,7 @@ debugger
   }
   writeValue(obj: any): void {
     debugger
-    if (obj === undefined || obj === null || obj.phoneNumber===null) {
+    if (obj === undefined || obj === null || obj.phoneNumber === null) {
       obj = '';
     }
     this.renderer.setAttribute(
@@ -115,7 +115,7 @@ debugger
     }
   }
   registerOnChange(fn: any): void {
-    this.onChange=fn
+    this.onChange = fn
 
   }
   registerOnTouched(fn: any): void {
@@ -129,13 +129,13 @@ debugger
     var countryInfo = this.iti.getSelectedCountryData();
     //var national=this.phoneNumberUtil.format(_, PhoneNumberFormat.NATIONAL)
     //console.log("onchange national  =>", national);
-    var number=  this.getParsedNumber(_,countryInfo.iso2!);
-    console.log("number => => ",number);
+    var number = this.getParsedNumber(_, countryInfo.iso2!);
+    console.log("number => => ", number);
     this.value = {
       countryCode: countryInfo.dialCode,
       phoneNumber: _,
       iso2: countryInfo.iso2,
-      intelNumber:number ? this.phoneNumberUtil.format(number, PhoneNumberFormat.E164): '',
+      intelNumber: number ? this.phoneNumberUtil.format(number, PhoneNumberFormat.E164) : '',
     }
 
 

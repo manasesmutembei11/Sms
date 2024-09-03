@@ -40,7 +40,7 @@ export class IntlTelInputComponent implements ControlValueAccessor, Validator {
     //console.log('ngAfterViewInit');
     this.iti = intlTelInput(this.elementRef.nativeElement, {
       initialCountry: 'ke',
-      preferredCountries: ['ke'],
+      //preferredCountries: ['ke'],
 
     });
     this.elementRef.nativeElement.addEventListener('countrychange', () => {

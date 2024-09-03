@@ -43,25 +43,25 @@ import intlTelInput from 'intl-tel-input';
     },
   ],
 })
-export class TelInputComponent implements OnInit, ControlValueAccessor,Validator {
+export class TelInputComponent implements OnInit, ControlValueAccessor, Validator {
   phoneNumberUtil = PhoneNumberUtil.getInstance();
   value?: IntelPhoneNumber;
-  onChange: (value: any) => void = () => {};
-  onTouched: () => void = () => {};
+  onChange: (value: any) => void = () => { };
+  onTouched: () => void = () => { };
   disabled: boolean = false;
 
   @ViewChild('telInputElement') input!: ElementRef;
   iti!: any;
-  isoCode: string="ke";
-  constructor() {}
-  
+  isoCode: string = "ke";
+  constructor() { }
 
-  ngOnInit(): void {}
+
+  ngOnInit(): void { }
   ngOnChanges(changes: SimpleChanges) {
-   
+
   }
   handleInput(event: Event) {
-   
+
     const value = (event.target as HTMLInputElement).value;
     this.value = this.buildValue(value);
 
@@ -69,13 +69,13 @@ export class TelInputComponent implements OnInit, ControlValueAccessor,Validator
   }
   buildValue(value: string): IntelPhoneNumber {
     var countryInfo = this.iti.getSelectedCountryData();
-    
+
     let intelNumber = '';
-    let nationalNumber:any = value;
+    let nationalNumber: any = value;
     var number = this.getParsedNumber(value, countryInfo.iso2);
     if (number) {
       intelNumber = this.phoneNumberUtil.format(number, PhoneNumberFormat.E164);
-      nationalNumber=number.getNationalNumber()?.toString()
+      nationalNumber = number.getNationalNumber()?.toString()
     }
 
     return {
@@ -99,70 +99,70 @@ export class TelInputComponent implements OnInit, ControlValueAccessor,Validator
         number.getNationalNumber()?.toString(),
         countryCode.toUpperCase()
       );
-    } catch (e) {}
+    } catch (e) { }
     // @ts-ignore
     return number;
   }
 
-  ngAfterViewInit() {   
+  ngAfterViewInit() {
     this.iti = intlTelInput(this.input.nativeElement, {
       initialCountry: this.isoCode,
-      preferredCountries: ['ke'],
+      // preferredCountries: ['ke'],
 
     });
-    this.input.nativeElement.addEventListener('countrychange', () => {   
+    this.input.nativeElement.addEventListener('countrychange', () => {
       const countryData = this.iti.getSelectedCountryData();
-      this.isoCode = countryData.iso2;   
-      let phoneNumber = this.value?this.value.phoneNumber:'';
-      this.value = this.buildValue(phoneNumber);     
+      this.isoCode = countryData.iso2;
+      let phoneNumber = this.value ? this.value.phoneNumber : '';
+      this.value = this.buildValue(phoneNumber);
       this.onChange(this.value.intelNumber);
     });
 
-  
+
   }
 
-  writeValue(value:string): void {
-   
-   
-    this.value = { phoneNumber:value};    
-    if(this.value.phoneNumber && this.value.phoneNumber.startsWith("+")){
-     
+  writeValue(value: string): void {
+
+
+    this.value = { phoneNumber: value };
+    if (this.value.phoneNumber && this.value.phoneNumber.startsWith("+")) {
+
       const number = this.phoneNumberUtil.parse(this.value.phoneNumber);
-      var phoneCode=number.getCountryCode()!;
-      
-      this.isoCode=this.phoneNumberUtil.getRegionCodeForCountryCode(phoneCode);
-      var internationNumber= this.phoneNumberUtil.format(number, PhoneNumberFormat.E164)
+      var phoneCode = number.getCountryCode()!;
+
+      this.isoCode = this.phoneNumberUtil.getRegionCodeForCountryCode(phoneCode);
+      var internationNumber = this.phoneNumberUtil.format(number, PhoneNumberFormat.E164)
       //const number = this.phoneNumberUtil.parseAndKeepRawInput(this.value.phoneNumber, "");
-      this.value ={
-        phoneNumber:number.getNationalNumber()?.toString()??"",
-        countryCode:phoneCode.toString(),
-        intelNumber:internationNumber,  
-        iso2:this.isoCode
-      } ;
-      if(this.iti){
+      this.value = {
+        phoneNumber: number.getNationalNumber()?.toString() ?? "",
+        countryCode: phoneCode.toString(),
+        intelNumber: internationNumber,
+        iso2: this.isoCode
+      };
+      if (this.iti) {
         this.iti.setCountry(this.isoCode!)
       }
     }
-   
+
 
   }
   registerOnChange(fn: any): void {
-    
+
     this.onChange = fn;
   }
-  registerOnTouched(fn: any): void {    
+  registerOnTouched(fn: any): void {
     this.onTouched = fn;
   }
   setDisabledState?(isDisabled: boolean): void {
-   
+
     this.disabled = isDisabled;
   }
 
   validate(control: AbstractControl<any, any>): ValidationErrors | null {
     let validNumber, required = false;
-    var numberValue=this.value?.phoneNumber??"";
+    var numberValue = this.value?.phoneNumber ?? "";
     try {
-      
+
       required = control.hasValidator(Validators.required)
       const phoneNumber = this.phoneNumberUtil.parseAndKeepRawInput(
         numberValue, this.isoCode
@@ -170,13 +170,13 @@ export class TelInputComponent implements OnInit, ControlValueAccessor,Validator
       validNumber = this.phoneNumberUtil.isValidNumber(phoneNumber);
     } catch (e) { }
 
-    
+
     if (!numberValue && !required) {
       return null;
     }
     return validNumber ? null : { phoneNumber: true }
   }
   registerOnValidatorChange?(fn: () => void): void {
-   
+
   }
 }
