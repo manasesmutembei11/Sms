@@ -1,0 +1,51 @@
+
+.profile-picture {
+    position: relative;
+    z-index: 1;
+    width: 710px;
+    height:130px;
+    background-color: lightgray;
+    background-size: contain;
+    border-radius: 1em;
+    padding: 5px;
+  }
+  
+  .profile-picture img {
+    width: 700px;
+    height: 120px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 1em;
+  }
+  
+  .profile-picture label {
+    width: 700px;
+    height: 120px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .profile-picture .drag-over .infotext {
+    color: rgb(114, 8, 8);
+    border: dashed 5px white;
+  }
+  
+  .profile-picture .infotext {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 115px;
+    width: 690px;
+    vertical-align: middle;
+    text-align: center;
+    color: rgba(247, 10, 10, 0.8);
+    border: dashed 3px rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding-top: 3px;
+    font-size: 150%;
+    
+  }
+  
+  .progress{
+    width:  710px;
+  }
+  

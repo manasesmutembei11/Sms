@@ -1,0 +1,24 @@
+<div class="profile-picture">
+
+    <!-- <img src="" width=300 height=300  appThumbnail [image]="item?._file" /> -->
+    <img src="" width=300 height=300 *ngIf="url" [src]="url" />
+
+
+  <label *ngIf="editmode" for="uploader-input" ng2FileDrop [ngClass]="{'drag-over': hasDragOver}"
+    (fileOver)="fileOver($event)" [uploader]="uploader">
+    <div class="infotext"><span *ngIf="!url">Drop your picture<br>or click to upload</span></div>
+
+  </label>
+
+
+
+
+  <input *ngIf="editmode" type="file" ng2FileSelect [uploader]="uploader" id="uploader-input" style="display:none"
+    accept="image/x-png,image/gif,image/jpeg" />
+
+</div>
+<div class=" progress my-1 " *ngIf="fileItem">
+  <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': fileItem.progress + '%' }">
+    {{fileItem.progress + '%'}}
+  </div>
+</div>

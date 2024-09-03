@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h4 class="modal-title ">Preview</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+
+<div class="modal-body">
+    <div *ngIf="loading" id="loading-bar-container">
+        <div><img src="/assets/images/spinner.gif" class="center"></div>
+    </div>
+    <pdf-viewer [src]="pdfSrc" [render-text]="true" [original-size]="false" (on-progress)="onProgress($event)"
+        style="width: 100%;">
+    </pdf-viewer>
+
+</div>
+<div class="modal-footer">
+
+
+</div>

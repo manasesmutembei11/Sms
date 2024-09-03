@@ -1,0 +1,29 @@
+<div class="table-responsive">
+    <table class="table table-condensed ">
+        <tbody >
+            <tr *ngFor="let doc of documents">
+                <td class="pb-1 ">
+                    <span class=" fw-bolder text-uppercase">{{doc.name}}</span>
+
+                    <div class="row" *ngFor="let item of doc.items">
+
+                        <div class="col-md-10 p-1 px-4  ">
+
+                            <i class="bi bi-file-earmark-fill me-1 text-pink" ></i>
+                          
+                            <span class="align-middle">{{item.fileName}}</span>
+                            <a href="javascript:void(0)" [appPdfPreview]="prepareUri(item.id)">
+                                <i class="bi bi-eye-fill   ms-2 me-1 text-primary"></i>Preview</a>
+
+                            <a href="javascript:void(0)" (click)="download(item.id)">
+                                <i class="bi bi-download   ms-2 me-1 text-primary"></i> Download</a>
+
+
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
