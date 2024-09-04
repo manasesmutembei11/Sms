@@ -1,0 +1,31 @@
+<div class="row ">
+  <div class="col-md-12 grid-margin ">
+    <div class="card h-auto" >
+      <div class="card-body">
+        <h6 class="card-title">Welcome</h6>
+        <div class="row">
+          <div class="col-md-6">
+              <div class="mb-3">
+                  <label for="formFile" class="form-label">Default file input example</label>
+                  <input class="form-control" type="file" id="formFile" ng2FileSelect [uploader]="uploader" accept=".doc, .docx">
+                </div>
+                <button type="button" (click)="save()" class="btn btn-primary">Upload</button>
+          </div>
+          </div>
+
+        <div class="card">
+          <div class="card-header text-uppercase">Documents</div>
+          <div class="card-body">
+            <app-document-upload [refId]="id" [operationTypeId]="1" (documentsChangedEvent)="updateDocuments($event)"></app-document-upload>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+

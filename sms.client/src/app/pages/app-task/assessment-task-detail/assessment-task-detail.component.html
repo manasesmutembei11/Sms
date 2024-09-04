@@ -1,0 +1,80 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+
+<div *ngIf="task" class="card h-auto">
+    <div class="card-body">
+        <fieldset disabled>
+            <div class="row">
+                <div class="col-md-3 mb-2">
+                    <label for="accountName" class="form-label">Account. </label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.accountName">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="regDate" class="form-label">Reg Date </label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.regDate | date:'dd/MM/yyyy' ">
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="clientName" class="form-label">Client </label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.clientName">
+                </div>
+                <div class="col-md-4 mb-2">
+                    <label for="customer" class="form-label">Customer</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.customer">
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="col-md-2 mb-2">
+                    <label for="contactPerson" class="form-label">Contact Person </label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.contactPerson">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="refNo" class="form-label"> Re No</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.refNo">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="claimNumber" class="form-label">Claim Number</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.claimNumber">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="policyNumber" class="form-label">policyNumber</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.policyNumber">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="policyExcess" class="form-label">Policy Excess</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.policyExcess | number:'1.2-2'">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="sumInsured" class="form-label">Sum Insured</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.sumInsured | number:'1.2-2'">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-2">
+                    <label for="areaName" class="form-label">Area Name</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.areaName">
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="handlerName" class="form-label">Handler</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.handlerName">
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="garageName" class="form-label">Garage Name</label>
+                    <input type="text" class="form-control text-bg-light" [value]="task.garageName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <label for="termsOfReference" class="form-label">Terms Of Reference</label>
+                    <textarea type="text" class="form-control text-bg-light" [value]="task.termsOfReference" rows="6"></textarea >
+                </div>               
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <label for="remarks" class="form-label">Remarks</label>
+                    <textarea type="text" class="form-control text-bg-light" [value]="task.remarks" rows="6"></textarea >
+                </div>               
+            </div>
+        </fieldset>
+        <app-document-upload-view [refId]="task.id"></app-document-upload-view>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<div class="card">
+  <div class="card-body">
+    <app-error-display [errors]="errors"></app-error-display>
+    <div *ngIf="rolePermissions">
+      <form>
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+          <li [ngbNavItem]="i+1" *ngFor="let module of rolePermissions.roleModules; let i = index">
+            <a ngbNavLink>{{module.name}}</a>
+            <ng-template ngbNavContent>
+
+              <table class="table   m-1">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Permission</th>
+                    <th nowrap style="width: 70%;">Description</th>
+                    <th class="text-center " nowrap style="width: 10%;">Can Access</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let permission of module.permissions">
+                    <td>{{permission.name}}</td>
+                    <td>{{permission.description}}</td>
+                    <td class="px-1 py-0 align-middle">
+                      <div class="form-check mb-0 text-center ">
+                        <input class="form-check-input " type="checkbox" name="canAccess_{{permission.name}}"
+                          [(ngModel)]="permission.canAccess">
+                      </div>
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </ng-template>
+          </li>
+
+        </ul>
+      </form>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+      <pre class="m-1">Active: {{ active }}</pre>
+      <div class="row ">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-primary me-1" (click)="saveChanges()">Save Changes</button>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <a class="btn btn-light waves-effect waves-light " (click)="back()" 
+      routerLinkActive="active">Back</a>
+  </div>
+</div>

@@ -412,6 +412,66 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetAppContactTypeLookupList",
+    "RelativePath": "api/EnumLookup/AppContactTypeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetAppGroupContactTypeLookupList",
+    "RelativePath": "api/EnumLookup/AppGroupContactTypeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetAppNotificationTypeLookupList",
+    "RelativePath": "api/EnumLookup/AppNotificationTypeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetDocumentTemplateLookupList",
+    "RelativePath": "api/EnumLookup/DocumentTemplateList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetEmailAddressTypeLookupList",
+    "RelativePath": "api/EnumLookup/EmailAddressTypeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetYearList",
+    "RelativePath": "api/EnumLookup/YearList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sms.Application.Controllers.MenuController",
     "Method": "MenuItems",
     "RelativePath": "api/Menu/menuItems",

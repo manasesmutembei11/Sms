@@ -1,0 +1,10 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+
+<div *ngIf="loading" id="loading-bar-container">
+    <div><img   src="/assets/images/spinner.gif" class="center"></div>
+    </div>
+<div class="card h-auto">
+    <div class="card-body">
+        <iframe (load)="onLoad($event)" style="height: 1800px;" [frameBorder]="0" width="100%" [src]="uri | safe:'resourceUrl'"></iframe>
+    </div>
+</div>

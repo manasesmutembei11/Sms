@@ -1,0 +1,78 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<div class="card h-auto">
+    <div class="card-body">
+
+
+        <div class="row mb-2">
+            <div class="col-md-5">
+                <!-- Buttons with Label -->
+
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Vehicle Model" id="modelId"
+                        [(ngModel)]="model.name" readonly>
+                    <button class="btn btn-primary " (click)="selectVehicleModel()" type="button">Select</button>
+                </div>
+
+
+            </div>
+            <div class="col-md-5 ms-auto">
+                <div class="input-group">
+                    <input type="text" placeholder="Search" name="search" class="form-control" aria-label="search"
+                        [(ngModel)]="search">
+                    <button ngbTooltip="Search" class="btn btn-primary" type="button" (click)="onSearch()"><i
+                            class="bi bi-search"></i></button>
+                    <button ngbTooltip="Clear" class="btn btn-primary" type="button" (click)="onReset()"><i
+                            class="bi bi-x-circle"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="model && model.id">
+            <div class="col-md-12 mb-2 ">
+                <!-- Buttons with Label --> 
+                <a class="btn btn-primary waves-effect waves-light  me-2" href="#" (click)="$event.preventDefault(); updateFromDatabase()">Update From Database</a>               
+                <!-- <a class="btn btn-primary waves-effect waves-light  me-2" href="#" [routerLink]="[model.id,'import']" routerLinkActive="active">Import From Template</a>                 -->
+            </div>           
+        </div>
+        <app-error-display [errors]="errors"></app-error-display>
+        <div class="table-responsive">
+            <table class="table table-nowrap mb-2">
+                <thead>
+                    <tr>
+
+                        <th scope="col">Part</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quote</th>
+                        <th [width]="200" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let item of items" class="p-1">
+                        <td>{{item.partName}}</td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.quote}}</td>
+                        <td>
+                            <div class="hstack gap-3 fs-15">
+                                <a ngbTooltip="Edit" href="#" [routerLink]="['edit',item.id]" routerLinkActive="active">
+                                    <i class="bi bi-pencil-fill"></i> Edit
+                                </a>
+
+                            </div>
+                        </td>
+
+
+
+                    </tr>
+                </tbody>
+            </table>
+            <div *ngIf="totalCount>0">
+                <ngb-pagination (pageChange)="pageChanged($event)" [collectionSize]="totalCount" [pageSize]="pageSize"
+                    [(page)]="page" [maxSize]="maxSize" [boundaryLinks]="true"></ngb-pagination>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

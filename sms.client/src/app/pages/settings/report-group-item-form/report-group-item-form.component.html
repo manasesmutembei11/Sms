@@ -1,0 +1,55 @@
+
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<div class="card">
+    <div class="card-body">
+        <app-error-display [errors]="errors"></app-error-display>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="row">
+
+                <div class="col-md-2 mb-3">
+                    <label for="no" class="form-label">No.</label>
+                    <input type="text" class="form-control" placeholder="No." id="no" formControlName="no"
+                        appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="no">
+                        <div ngxError="required">No. is required</div>
+                        <div ngxError="numeric">No. must be numeric</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" id="name" formControlName="name"
+                        appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="name">
+                        <div ngxError="required"> Name is required</div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="reportUrl" class="form-label">Report Uri</label>
+                    <input type="text" class="form-control" placeholder="Report Uri" id="reportUrl"
+                        formControlName="reportUrl" appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="reportUrl">
+                        <div ngxError="required"> Name is required</div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary me-1">{{buttonText}}</button>
+                    <button type="reset" (click)="onCancel()" class="btn btn-danger me-1">Cancel</button>
+                </div>
+            </div>
+            <!--end row-->
+        </form>
+        <hr>
+        <a class="btn btn-light waves-effect waves-light " (click)="back()"  >Back</a>
+
+
+             <!-- [routerLink]="['/settings/reportgroup/reports',groupId]" -->
+    </div>
+</div>

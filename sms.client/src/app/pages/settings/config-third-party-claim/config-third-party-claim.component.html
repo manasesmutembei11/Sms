@@ -1,0 +1,29 @@
+<div class="card" >
+    <div class="card-body">
+      <h5 class="card-title fw-bolder">Third Party Claims</h5>
+      <app-error-display [errors]="errors"></app-error-display>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+       
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <label for="tracingClaimNatureID" class="form-label">Tracing Task Nature </label>
+                <select class="form-select" id="tracingClaimNatureID" formControlName="tracingClaimNatureID" appValidityStyle
+                    [submitted]="submitted">
+                    <option [ngValue]="null">-------</option>
+                    <option *ngFor="let item of claimNatures" [value]="item.id">{{item.name}}</option>
+                </select>
+                <div ngxErrors="tracingClaimNatureID">
+                    <div ngxError="required">Nature is required</div>
+                </div>
+            </div>
+        </div>
+
+          <div class="row">
+              <div class="col-md-4">
+                  <button type="submit" class="btn btn-primary me-1">Save Changes</button>
+              </div>
+          </div>
+          <!--end row-->
+      </form>
+    </div>
+  </div>

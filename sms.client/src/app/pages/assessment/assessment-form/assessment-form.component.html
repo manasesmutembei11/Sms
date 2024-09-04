@@ -1,0 +1,536 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+
+<div class="card h-auto">
+    <div class="card-body">
+        <app-error-display [errors]="errors"></app-error-display>
+        <form [formGroup]="form" (ngSubmit)="onSubmit($event.submitter.value)" autocomplete="off">
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                <li [ngbNavItem]="1">
+                    <button ngbNavLink>Header</button>
+                    <ng-template ngbNavContent>
+                        <div class="row">
+                            <div class="col-md-2 mb-2">
+                                <label for="yom" class="form-label">Year </label>
+                                <select class="form-select" id="year" formControlName="yom" appValidityStyle
+                                    [submitted]="submitted">
+                                    <option [ngValue]="null">-------</option>
+                                    <option *ngFor="let item of years" [value]="item.id">{{item.name}}</option>
+                                </select>
+                                <div ngxErrors="yom">
+                                    <div ngxError="required">Year is required</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-2">
+                                <label for="modelId" class="form-label">Model</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Vehicle Model" id="modelId"
+                                        formControlName="modelName" readonly appValidityStyle [submitted]="submitted">
+                                    <button class="btn btn-primary " (click)="selectVehicleModel()"
+                                        type="button">Select</button>
+                                </div>
+                                <div ngxErrors="modelId">
+                                    <div ngxError="required">Vehicle Model is required</div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <label for="transmissionType" class="form-label">Transmission Type </label>
+                                <select class="form-select" id="transmissionType" formControlName="transmissionType"
+                                    appValidityStyle [submitted]="submitted">
+                                    <option [ngValue]="null">-------</option>
+                                    <option *ngFor="let item of transmissionTypes" [value]="item.id">{{item.name}}
+                                    </option>
+                                </select>
+                                <div ngxErrors="transmissionType">
+                                    <div ngxError="required">Transmission Type is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="color" class="form-label">Color </label>
+                                <select class="form-select" id="color" formControlName="color" appValidityStyle
+                                    [submitted]="submitted">
+                                    <option [ngValue]="null">-------</option>
+                                    <option *ngFor="let item of colours" [value]="item.name">{{item.name}}</option>
+                                </select>
+                                <div ngxErrors="color">
+                                    <div ngxError="required">Color is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-2 mb-2">
+                                <label for="chassisNo" class="form-label">Chassis No</label>
+                                <input type="text" class="form-control" placeholder="Chassis No" id="chassisNo"
+                                    formControlName="chassisNo" appValidityStyle [submitted]="submitted">
+                                <div ngxErrors="chassisNo">
+                                    <div ngxError="required"> Chassis No is required</div>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-2">
+                                <label for="engineNo" class="form-label">Engine No</label>
+                                <input type="text" class="form-control" placeholder="Engine No" id="engineNo"
+                                    formControlName="engineNo" appValidityStyle [submitted]="submitted">
+                                <div ngxErrors="engineNo">
+                                    <div ngxError="required"> Chassis No is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-1">
+                                <label for="regDate" class="form-label"> Registration Date</label>
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="dd-MMM-yyyy" name="dp"
+                                        [maxDate]="minDate" ngbDatepicker #d1="ngbDatepicker"
+                                        formControlName="regDate">
+                                    <button class="input-group-text" type="button" (click)="d1.toggle()">
+                                        <i class="bi bi-calendar-fill icon-md text-muted"></i>
+                                    </button>
+                                </div>
+                                <div ngxErrors="regDate">
+                                    <div ngxError="required"> Registration Date is required</div>
+                                    <div ngxError="ngbDate"> Invalid Registration Date</div>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-2">
+                                <label for="placeOfOrigin" class="form-label">Origin</label>
+                                <input type="text" class="form-control" placeholder="Origin" id="chassisNo"
+                                    formControlName="placeOfOrigin" appValidityStyle [submitted]="submitted">
+                                <div ngxErrors="placeOfOrigin">
+                                    <div ngxError="required"> Origin  is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-1">
+                                <label for="assessmentDate" class="form-label"> Assessment Date</label>
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="dd-MMM-yyyy" name="dp" [minDate]="minDate"
+                                        [maxDate]="maxDate" ngbDatepicker #d="ngbDatepicker"
+                                        formControlName="assessmentDate">
+                                    <button class="input-group-text" type="button" (click)="d.toggle()">
+                                        <i class="bi bi-calendar-fill icon-md text-muted"></i>
+                                    </button>
+                                </div>
+                                <div ngxErrors="assessmentDate">
+                                    <div ngxError="required"> Assessment Date is required</div>
+                                    <div ngxError="ngbDate"> Invalid Assessment Date</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <label for="preAccidentValue" class="form-label">PAV</label>
+                                <input appNumericInput type="text" class="form-control" placeholder="PAV"
+                                    id="preAccidentValue" formControlName="preAccidentValue" appValidityStyle
+                                    [submitted]="submitted">
+                                <div ngxErrors="preAccidentValue">
+                                    <div ngxError="required">Pre Accident Value Insured is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <label for="salvageValue" class="form-label">Salvage Value</label>
+                                <input appNumericInput type="text" class="form-control" placeholder="Salvage Value"
+                                    id="salvageValue" formControlName="salvageValue" appValidityStyle
+                                    [submitted]="submitted">
+                                <div ngxErrors="salvageValue">
+                                    <div ngxError="required">Salvage Value Insured is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <label for="odometer" class="form-label">Odometer</label>
+                                <div class="input-group">
+                                    <input appNumericInput type="text" class="form-control" placeholder="odometer"
+                                        id="odometer" formControlName="odometer" appValidityStyle
+                                        [submitted]="submitted">
+                                    <select style="max-width: 80px;" class="form-select" id="odometerUOM"
+                                        formControlName="odometerUOM" appValidityStyle [submitted]="submitted">
+                                        <option [ngValue]="null">-------</option>
+                                        <option *ngFor="let item of odometerItems" [value]="item.name">{{item.name}}
+                                        </option>
+                                    </select>
+
+                                </div>
+                                <div ngxErrors="odometer">
+                                    <div ngxError="required">Odometer is required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-12 mb-2">
+                                <label for="vehicleDetailComment" class="form-label">Vehicle Detail Comment</label>
+                                <textarea maxlength="500" type="text" class="form-control" placeholder="Vehicle Detail Comment" id="vehicleDetailComment"
+                                    formControlName="vehicleDetailComment" appValidityStyle [submitted]="submitted"></textarea>
+                                <div ngxErrors="vehicleDetailComment">
+                                    <div ngxError="required">Vehicle Detail Comment is required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-2">
+                                <label for="repairTimeline" class="form-label">Repair Timeline(day)</label>
+                                <input appNumericInput [options]="repairTimelineOption" type="text" class="form-control"
+                                    placeholder="No of days" maxlength="3" id="repairTimeline"
+                                    formControlName="repairTimeline" appValidityStyle [submitted]="submitted">
+                                <div ngxErrors="repairTimeline">
+                                    <div ngxError="required">Repair Timeline is required</div>
+                                    <div ngxError="maxlength">Up to 3 digit allowed</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="recommendation" class="form-label">Recommedation </label>
+                                <select class="form-select" id="year" formControlName="recommendation" appValidityStyle
+                                    [submitted]="submitted">
+                                    <option [ngValue]="null">-------</option>
+                                    <option *ngFor="let item of recommedations" [value]="item.id">{{item.name}}</option>
+                                </select>
+                                <div ngxErrors="recommendation">
+                                    <div ngxError="required">Recommendation is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6  mb-2 mt-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="requireInvestigation"
+                                        formControlName="requireInvestigation">
+                                    <label class="form-check-label" for="requireInvestigation">
+                                        REQUIRE INVESTIGATION
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-12 mb-2">
+                                <label for="termsOfReference" class="form-label">Terms Of Reference</label>
+                                <textarea maxlength="500" type="text" class="form-control" placeholder="Terms Of Reference"
+                                    id="termsOfReference" formControlName="termsOfReference" appValidityStyle
+                                    [submitted]="submitted"></textarea>
+                                <div ngxErrors="termsOfReference">
+                                    <div ngxError="required">Terms Of Reference is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12 mb-2">
+                                <label for="damageProfile" class="form-label">Damage Profile</label>
+                                <textarea maxlength="500" type="text" class="form-control" placeholder="Damage Profile"
+                                    id="damageProfile" formControlName="damageProfile" appValidityStyle
+                                    [submitted]="submitted"></textarea>
+                                <div ngxErrors="damageProfile">
+                                    <div ngxError="required">Damage Profile is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12 mb-2">
+                                <label for="profferedRepairMethod" class="form-label">Proffered Repair Method</label>
+                                <textarea maxlength="500" type="text" class="form-control" placeholder="Proffered Repair Method"
+                                    id="profferedRepairMethod" formControlName="profferedRepairMethod" appValidityStyle
+                                    [submitted]="submitted"></textarea>
+                                <div ngxErrors="profferedRepairMethod">
+                                    <div ngxError="required">Proffered Repair Method is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12 mb-2">
+                                <label for="remarks" class="form-label">Remarks</label>
+                                <textarea maxlength="500" type="text" class="form-control" placeholder="Remarks" id="remarks"
+                                    formControlName="remarks" appValidityStyle [submitted]="submitted"></textarea>
+                                <div ngxErrors="remarks">
+                                    <div ngxError="required">Remarks is required</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-0">
+                                <label class="form-label">Documents</label>
+                                <app-document-upload *ngIf="form.value.id" [refId]="form.value.id" [operationTypeId]="3"
+                                    (documentsChangedEvent)="updateDocuments($event)"></app-document-upload>
+                                <div ngxErrors="madatoryDocsUploaded">
+                                    <div ngxError="required">Please make sure you have uploaded all mandatory documents
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <button ngbNavLink>Survey Observations</button>
+                    <ng-template ngbNavContent>
+
+
+                        <div class="row">
+                            <div class="col-md-12 table-responsive">
+                                <div formArrayName="surveyItems">
+                                    <table class="table table-nowrap mb-2 ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="p-1 ">Item</th>
+                                                <th scope="col" class="p-1 ">Observation</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of surveyItems.controls; let i = index ;"
+                                                [formGroupName]="i">
+                                                <td class="p-1">{{ item.get('itemName')?.value }}</td>
+                                                <td class="p-1">
+                                                    <div class="form-check form-check-inline"
+                                                        *ngFor="let sv of surveyValues; let i = index ;">
+                                                        <input class="form-check-input " type="radio"
+                                                            id="item{{item.get('itemId')?.value}}_{{sv.id}}"
+                                                            formControlName="value" [value]="sv.id">
+                                                        <label class="form-check-label"
+                                                            for="item{{item.get('itemId')?.value}}_{{sv.id}}">
+                                                            {{sv.name}}
+                                                        </label>
+                                                    </div>
+                                                    <div ngxErrors="value">
+                                                        <div ngxError="required">Observation is required</div>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2 mb-2">
+                                <label for="nsf" class="form-label text-uppercase">NSF</label>
+                                <input appNumericInput [options]="percentOption" type="text" class="form-control"
+                                    placeholder="NSF" id="nsf" formControlName="nsf" appValidityStyle
+                                    [submitted]="submitted">
+                                <div ngxErrors="nsf">
+                                    <div ngxError="required">NSF is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="nsr" class="form-label text-uppercase">NSR</label>
+                                <input appNumericInput [options]="percentOption" type="text" class="form-control"
+                                    placeholder="NSR" id="nsr" formControlName="nsr" appValidityStyle
+                                    [submitted]="submitted">
+                                <div ngxErrors="nsr">
+                                    <div ngxError="required">NSR is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="osf" class="form-label text-uppercase">OSF</label>
+                                <input appNumericInput [options]="percentOption" type="text" class="form-control"
+                                    placeholder="OSF" id="osf" formControlName="osf" appValidityStyle
+                                    [submitted]="submitted">
+                                <div ngxErrors="osf">
+                                    <div ngxError="required">OSF is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="osr" class="form-label text-uppercase">osr</label>
+                                <input appNumericInput [options]="percentOption" type="text" class="form-control"
+                                    placeholder="OSR" id="osr" formControlName="osr" appValidityStyle
+                                    [submitted]="submitted">
+                                <div ngxErrors="osr">
+                                    <div ngxError="required">OSR is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="tireBrand" class="form-label">Tire Brand</label>
+                                <input type="text" class="form-control" placeholder="Tire Brand" id="tireBrand"
+                                    formControlName="tireBrand" appValidityStyle [submitted]="submitted">
+                                <div ngxErrors="tireBrand">
+                                    <div ngxError="required">Tire Brand is required</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <label for="tireSize" class="form-label">Tire Size</label>
+                                <input type="text" class="form-control" placeholder="Tire Size" id="tireSize"
+                                    formControlName="tireSize" appValidityStyle [submitted]="submitted">
+                                <div ngxErrors="tireSize">
+                                    <div ngxError="required">Tire Size is required</div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="3">
+                    <button ngbNavLink>Repair Parts</button>
+                    <ng-template ngbNavContent>
+                        <div class="row mb-1">
+                            <div class="col-md-12">
+                                <button *ngIf="form.value.modelId" type="button" class="btn btn-dark me-1"
+                                    (click)="addPart()"><i class="bi bi-clipboard-plus me-2"></i> Add Part</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 table-responsive">
+                                <div formArrayName="items">
+                                    <table class="table table-nowrap mb-2 ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="p-1 ">Part Name</th>
+                                                <th scope="col" class="p-1 ">Condition</th>
+                                                <th scope="col" class="p-1 text-end">Quantity</th>
+                                                <th scope="col" class="p-1 text-end">Price</th>
+                                                <th scope="col" class="p-1 text-end">MarkUp</th>
+                                                <th scope="col" class="p-1 text-end">Discount</th>
+                                                <th scope="col" class="p-1 text-end">Tax</th>
+                                                <th scope="col" class="p-1 text-end">Gross Total</th>
+                                                <th scope="col" class="p-1 text-end">Contibution</th>
+                                                <th scope="col" class="p-1 ps-4">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of items.controls; let i = index ;"
+                                                [formGroupName]="i">
+                                                <td class="p-1">{{ item.get('partName')?.value }}</td>
+                                                <td class="p-1">{{ item.get('conditionName')?.value }}</td>
+                                                <td class="p-1 text-end">{{ item.get('quantity')?.value |
+                                                    number:'1.0-0'}}</td>
+                                                <td class="p-1 text-end">{{ item.get('price')?.value | number:'1.2-2'}}
+                                                </td>
+                                                <td class="p-1 text-end">{{ item.get('markUp')?.value | number:'1.2-2'
+                                                    }}</td>
+                                                <td class="p-1 text-end">{{ item.get('discountAmount')?.value |
+                                                    number:'1.2-2'}}</td>
+                                                <td class="p-1 text-end">{{ item.get('taxAmount')?.value |
+                                                    number:'1.2-2'}}</td>
+                                                <td class="p-1 text-end">{{ item.get('grossTotal')?.value |
+                                                    number:'1.2-2'}}</td>
+                                                <td class="p-1 text-end">{{ item.get('contribution')?.value|
+                                                    number:'1.2-2' }}</td>
+                                                <td class="p-1 ">
+                                                    <div class="hstack gap-3 fs-15 ">
+                                                        <a ngbTooltip="Edit" class="ms-4" href="#"
+                                                            (click)="$event.preventDefault();editPart(i)">
+                                                            <i class="bi bi-pencil-fill"></i> Edit
+                                                        </a>
+                                                        <a ngbTooltip="Delete" class="text-danger" href="#"
+                                                            (click)="$event.preventDefault();removeItem(i)">
+                                                            <i class="bi bi-trash-fill"></i> Delete
+                                                        </a>
+
+
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="4">
+                    <button ngbNavLink>Other Costs</button>
+                    <ng-template ngbNavContent>
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-dark me-1" (click)="addOtherCost()"><i
+                                        class="bi bi-clipboard-plus me-2"> </i>Add Other Cost </button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 table-responsive">
+                                <div formArrayName="otherCosts">
+                                    <table class="table table-nowrap mb-2 ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="p-1 ">Service</th>
+                                                <th scope="col" class="p-1 ">Description</th>
+                                                <th scope="col" class="p-1 text-end">Amount</th>
+                                                <th scope="col" class="p-1 text-end">Tax Amount</th>
+                                                <th scope="col" class="p-1 text-end">Gross Total</th>
+                                                <th scope="col" class="p-1 ps-4">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of otherCosts.controls; let i = index ;"
+                                                [formGroupName]="i">
+                                                <td class="p-1">{{ item.get('chargeName')?.value }}</td>
+                                                <td class="p-1">{{ item.get('description')?.value }}</td>
+                                                <td class="p-1 text-end">{{ item.get('amount')?.value | number:'1.0-0'}}
+                                                </td>
+                                                <td class="p-1 text-end">{{ item.get('taxAmount')?.value |
+                                                    number:'1.2-2'}}</td>
+                                                <td class="p-1 text-end">{{ item.get('grossTotal')?.value |
+                                                    number:'1.2-2' }}</td>
+
+                                                <td class="p-1 ">
+                                                    <div class="hstack gap-3 fs-15 ">
+                                                        <a ngbTooltip="Edit" class="ms-4" href="#"
+                                                            (click)="$event.preventDefault();editServiceItem(i)">
+                                                            <i class="bi bi-pencil-fill"></i> Edit
+                                                        </a>
+                                                        <a ngbTooltip="Delete" class="text-danger" href="#"
+                                                            (click)="$event.preventDefault();removeServiceItem(i)">
+                                                            <i class="bi bi-trash-fill"></i> Delete
+                                                        </a>
+
+
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="5">
+                    <button ngbNavLink>Photos</button>
+                    <ng-template ngbNavContent>
+                        <app-upload-photo-single *ngIf="this.form.value.id" [refId]="this.form.value.id"
+                            buttonText="Upload Damage Profile Photo"></app-upload-photo-single>
+                        <hr>
+                        <app-photo-upload *ngIf="this.form.value.id" [refId]="this.form.value.id"
+                            (OnPhotoChange)="onPhotoChange($event)"></app-photo-upload>
+                    </ng-template>
+                </li>
+            </ul>
+
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div ngxErrors="photoUpload">
+                        <div ngxError="required">Please make sure you have uploaded photos and description provided
+                        </div>
+                    </div>
+                    <div ngxErrors="repairItemInputed">
+                        <div ngxError="required">Please make sure you have atleast one repair part or one service item
+                            added</div>
+                    </div>
+                    <div *ngIf="!form.valid && submitted">
+                        <div class="text-danger fs-6">Please make sure you have provided required inputs in all the tabs
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary me-1" value="save">{{buttonText}}</button>
+                    <button type="submit" class="btn btn-primary me-1" value="done">{{buttonText}} & Finish</button>
+                    <button type="reset" (click)="onCancel()" class="btn btn-danger me-1">Cancel</button>
+                </div>
+            </div>
+            <!--end row-->
+        </form>
+        <hr>
+        <a class="btn btn-light waves-effect waves-light " (click)="back()">Back</a>
+    </div>
+</div>

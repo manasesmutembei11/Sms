@@ -1,0 +1,78 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title fw-bolder">Mail Server</h5>
+        <app-error-display [errors]="errors"></app-error-display>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" id="name" formControlName="name"
+                        appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="name">
+                        <div ngxError="required">Name is required</div>
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="from" class="form-label">From</label>
+                    <input type="text" class="form-control" placeholder="From" id="from" formControlName="from"
+                        appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="from">
+                        <div ngxError="required"> From is required</div>
+                        <div ngxError="email">Invalid email address</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-6 mb-3">
+                    <label for="smtpServer" class="form-label">Smtp Server</label>
+                    <input type="text" class="form-control" placeholder="SMTP Server" id="smtpServer"
+                        formControlName="smtpServer" appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="smtpServer">
+                        <div ngxError="required"> SMTP Server is required</div>
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="smtpPort" class="form-label">Smtp Port</label>
+                    <input type="text" class="form-control" placeholder="Port" id="smtpPort"
+                        formControlName="smtpPort" appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="smtpPort">
+                        <div ngxError="numeric"> SMTP Port must be a numeric</div>
+                        <div ngxError="required"> SMTP Port is required</div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <div class="row">
+
+                <div class="col-6 mb-3">
+                    <label for="smtpUserName" class="form-label">Username</label>
+                    <input type="text" class="form-control" placeholder="Username" id="smtpUserName"
+                        formControlName="smtpUserName" appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="smtpUserName">
+                        <div ngxError="required"> Username is required</div>
+                        <div ngxError="email">Invalid email address</div>
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="smtpPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" id="smtpPassword"
+                        formControlName="smtpPassword" appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="smtpPassword">
+                        <div ngxError="required"> Password is required</div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary me-1">Save Changes</button>
+                </div>
+            </div>
+            <!--end row-->
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,80 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<div class="card h-auto">
+    <div class="card-body">
+        <app-error-display [errors]="errors"></app-error-display>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="bodyType" class="form-label">Body type </label>
+                    <select class="form-select" id="bodyType" formControlName="bodyType" appValidityStyle
+                        [submitted]="submitted">  
+                        <option [ngValue]="null">-------</option>                      
+                        <option *ngFor="let item of bodyTypes" [value]="item.id">{{item.name}}</option>
+                    </select>
+                    <div ngxErrors="bodyType">
+                        <div ngxError="required">Body type is required</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <label for="formFile" class="form-label">File</label>
+                    <input class="form-control" type="file" id="formFile" #fileInput 
+                    ng2FileSelect [uploader]="uploader"
+                        accept=".xls, .xlsx" (onFileSelected)="changed($event)" />
+                    <div ngxErrors="fileSelected">
+                        <div ngxError="required"> File is required</div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+
+
+
+
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary me-1">{{buttonText}}</button>
+                    <button type="reset" (click)="onCancel()" class="btn btn-danger me-1">Cancel</button>
+                </div>
+            </div>
+            <!--end row-->
+        </form>
+       
+        <div class="table-responsive" *ngIf="response && response.data ">
+            <h3>Import Info</h3>
+            <table class="table table-nowrap table-hover table-sm mb-2">
+                <thead class="bg-danger table-light">
+                    <tr class="text-light">
+                        <th scope="col" class="text-nowrap">Location</th>
+                        <th scope="col" class="text-nowrap">Errors</th>
+                       
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of response.data" class="p-1">
+                        <td  class="p-1">{{item.rowInfo}}</td>
+                        <td class="p-1">
+                            <span class="badge rounded-pill text-bg-danger" *ngFor="let e of item.errors">{{e}}</span>
+                         
+                        </td>
+                        
+                        
+                       
+
+
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+           
+        </div>
+        <hr>
+        <a class="btn btn-light waves-effect waves-light " (click)="back()">Back</a>
+    </div>
+</div>

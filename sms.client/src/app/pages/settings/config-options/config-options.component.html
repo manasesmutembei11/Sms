@@ -1,0 +1,33 @@
+
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<!-- Bordered Tables -->
+
+<div class="card h-auto">
+    <div class="card-body">
+     <div  class="row">
+     <div  class="col-4">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title fw-bolder">Options</h5>
+
+              <div class="list-group">
+                <a  class="list-group-item list-group-item-action "
+                [ngClass]="{'active': selectedItem?.id==item.id}"
+                *ngFor="let item of configTypes" (click)="selectConfigType(item)">
+                    {{item.name}}
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+     </div>
+     <div  class="col-8">
+        <app-config-report-server *ngIf="selectedItem && selectedItem.id==1" [configType]="selectedItem"></app-config-report-server>
+        <app-config-storage *ngIf="selectedItem && selectedItem.id==2" [configType]="selectedItem" ></app-config-storage>
+        <app-config-mail-server *ngIf="selectedItem && selectedItem.id==3" [configType]="selectedItem" ></app-config-mail-server>
+        <app-config-third-party-claim *ngIf="selectedItem && selectedItem.id==4" [configType]="selectedItem" ></app-config-third-party-claim>
+        <app-config-expaq-mate-server *ngIf="selectedItem && selectedItem.id==5" [configType]="selectedItem" ></app-config-expaq-mate-server>
+    </div>
+    </div>
+</div>

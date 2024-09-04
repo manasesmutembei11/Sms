@@ -1,0 +1,20 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<div class="card h-auto">
+    <div class="card-body">
+
+        <div class="row mb-3">
+            <div class="col-md-12"> 
+                <div class="form-check form-check-inline" *ngFor="let action of action.taskTypes">
+                    <input class="form-check-input " type="radio"  id="action_{{action.id}}"  name="action"                     
+                        [value]="action.id" [(ngModel)]="selectedActionId">
+                    <label class="form-check-label text-primary" for="action_{{action.id}}">
+                        {{action.name}}
+                    </label>
+                </div>
+               
+            </div>
+       </div>
+       <hr>
+       <app-assessment-task-form  *ngIf="selectedActionId==1" (onDoneEvent)="done($event)"></app-assessment-task-form >
+    </div>
+</div>

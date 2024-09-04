@@ -22,28 +22,6 @@ namespace Sms.Application.Controllers.Masterdata
             return Ok(data);
         }
 
-
-
-        [HttpGet("ChargeTypeList")]
-        public IActionResult GetChargeTypeLookupList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<ChargeType>();
-            return Ok(data);
-        }
-        [HttpGet("TransmissionTypeList")]
-        public IActionResult GetTransmissionTypeLookupList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<TransmissionType>();
-            return Ok(data);
-        }
-
-        [HttpGet("PartGroupList")]
-        public IActionResult GetPartGroupListLookupList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<PartGroup>();
-            return Ok(data);
-        }
-
         [HttpGet("AppNotificationTypeList")]
         public IActionResult GetAppNotificationTypeLookupList()
         {
@@ -68,20 +46,13 @@ namespace Sms.Application.Controllers.Masterdata
             return Ok(data);
         }
 
-
         [HttpGet("EmailAddressTypeList")]
         public IActionResult GetEmailAddressTypeLookupList()
         {
             var data = XpaEnumExtensions.GetEnumList<EmailAddressType>();
             return Ok(data);
         }
-
-        [HttpGet("AreaTypeList")]
-        public IActionResult GetAreaTypeList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<AreaOfOperationType>();
-            return Ok(data);
-        }
+     
         [HttpGet("YearList")]
         public IActionResult GetYearList()
         {
@@ -94,30 +65,7 @@ namespace Sms.Application.Controllers.Masterdata
             return Ok(data);
         }
 
-        [HttpGet("VehicleBodyTypeList")]
-        public IActionResult GetVehicleBodyTypeList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<VehicleBodyType>().OrderBy(s => s.Name);
-            return Ok(data);
-        }
-        [HttpGet("AssessmentRecommendationList")]
-        public IActionResult GetAssessmentRecommendationList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<AssessmentRecommendation>().Where(s => s.Id != 0).ToList();
-            return Ok(data);
-        }
-        [HttpGet("AssessmentSurveyItemValueList")]
-        public IActionResult GetAssessmentSurveyItemValueList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<AssessmentSurveyItemValue>().Where(s => s.Id != 0).ToList();
-            return Ok(data);
-        }
-        [HttpGet("SurveyItemTypeList")]
-        public IActionResult GetSurveyItemTypeList()
-        {
-            var data = XpaEnumExtensions.GetEnumList<SurveyItemType>().Where(s => s.Id != 0).ToList();
-            return Ok(data);
-        }
+     
 
 
 

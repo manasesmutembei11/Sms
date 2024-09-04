@@ -1,0 +1,56 @@
+<app-pagetitle [title]="pageTitle" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+
+<div class="card h-auto">
+    <div class="card-body">
+        <app-error-display [errors]="errors"></app-error-display>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="contactType" class="form-label">Contact Type </label>
+                    <select class="form-select" id="contactType" formControlName="contactType" appValidityStyle
+                        [submitted]="submitted">
+                        <option [ngValue]="null">-------</option>
+                        <option *ngFor="let item of contactTypes" [value]="item.id">{{item.name}}</option>
+                    </select>
+                    <div ngxErrors="contactType">
+                        <div ngxError="required">Contact Type is required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="Email" id="email" formControlName="email"
+                        appValidityStyle [submitted]="submitted">
+                    <div ngxErrors="email">
+                        <div ngxError="required"> Email is required</div>
+                        <div ngxError="email"> Invalid email address</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <app-tel-input formControlName="phone"></app-tel-input>
+                    <div ngxErrors="phone">
+                        <div ngxError="required">Phone number is required</div>
+                        <div ngxError="phoneNumber">Invalid phone number</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary me-1">{{buttonText}}</button>
+                    <button type="reset" (click)="onCancel()" class="btn btn-danger me-1">Cancel</button>
+                </div>
+            </div>
+            <!--end row-->
+        </form>
+        <hr>
+        <a class="btn btn-light waves-effect waves-light " (click)="back()">Back</a>
+    </div>
+</div>

@@ -23,7 +23,7 @@ export class SidebarComponent implements OnInit {
   @Input() menuItems: MenuItem[] = [];
 
   constructor(private router: Router, public translate: TranslateService,
-    ) {
+  ) {
     translate.setDefaultLang('en');
     router.events.forEach((event) => {
       if (event instanceof NavigationEnd) {
@@ -72,17 +72,17 @@ export class SidebarComponent implements OnInit {
   /**
    * Activate the parent dropdown
    */
-  startsWithV2(currentPath:string, paths: string[]) {
-    let result=null;
-    for(var i =0;i<= paths.length;i++){
-      var key=paths[i];
+  startsWithV2(currentPath: string, paths: string[]) {
+    let result = null;
+    for (var i = 0; i <= paths.length; i++) {
+      var key = paths[i];
       const matcher = new RegExp(`^${key}`, 'g');
-      var match = currentPath.match(matcher);      
-      if (match ) {
-        result= match[0];
+      var match = currentPath.match(matcher);
+      if (match) {
+        result = match[0];
       }
     }
-    
+
     return result;
   }
   _activateMenuDropdown() {
@@ -94,9 +94,9 @@ export class SidebarComponent implements OnInit {
     const paths = [];
     for (let i = 0; i < links.length; i++) {
       paths.push(links[i]['pathname']);
-      
+
     }
-    
+
     // var itemIndex = paths.indexOf(window.location.pathname);
     // if (itemIndex === -1) {
     //   var result=this.startsWithV2(window.location.pathname,paths)      
@@ -105,9 +105,9 @@ export class SidebarComponent implements OnInit {
     // } else {
     //   menuItemEl = links[itemIndex];
     // }
-    var result=this.startsWithV2(window.location.pathname,paths) 
+    var result = this.startsWithV2(window.location.pathname, paths)
     menuItemEl = links[paths.indexOf(result)];
-    
+
     if (menuItemEl) {
       menuItemEl.classList.add('active');
       const parentEl = menuItemEl.parentElement;
