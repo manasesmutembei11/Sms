@@ -1,4 +1,5 @@
-﻿using Sms.Core.Domain.Entities.UserEntities;
+﻿
+using Sms.Core.Domain.Entities.UserEntities;
 
 namespace Sms.Application.Menus
 {

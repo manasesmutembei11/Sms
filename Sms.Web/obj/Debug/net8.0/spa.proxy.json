@@ -3,7 +3,7 @@
 "ServerUrl": "",
 "RedirectUrl": "",
 "LaunchCommand": "",
-"WorkingDirectory": "C:\\Projects\\Sms\\Sms.Web",
+"WorkingDirectory": "C:\\LEARN\\Sms\\Sms.Web",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

@@ -765,11 +765,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj",
+      "projectUniqueName": "C:\\LEARN\\Sms\\Sms.Core\\Sms.Core.csproj",
       "projectName": "Sms.Core",
-      "projectPath": "C:\\Projects\\Sms\\Sms.Core\\Sms.Core.csproj",
+      "projectPath": "C:\\LEARN\\Sms\\Sms.Core\\Sms.Core.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Sms\\Sms.Core\\obj\\",
+      "outputPath": "C:\\LEARN\\Sms\\Sms.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
