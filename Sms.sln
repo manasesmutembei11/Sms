@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sms.Web", "Sms.Web\Sms.Web.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sms.Application", "Sms.Application\Sms.Application.csproj", "{CEE53929-93FF-4446-8662-DCEFD2FDC25F}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "sms.client", "sms.client\sms.client.esproj", "{28C81362-BB49-41C8-BA15-F62EE0BAB965}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "sms.client", "AngularProject1\sms.client.esproj", "{D8B70A13-597A-4F81-AFCE-190CB954779A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +35,12 @@ Global
 		{CEE53929-93FF-4446-8662-DCEFD2FDC25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEE53929-93FF-4446-8662-DCEFD2FDC25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEE53929-93FF-4446-8662-DCEFD2FDC25F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28C81362-BB49-41C8-BA15-F62EE0BAB965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28C81362-BB49-41C8-BA15-F62EE0BAB965}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28C81362-BB49-41C8-BA15-F62EE0BAB965}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{28C81362-BB49-41C8-BA15-F62EE0BAB965}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28C81362-BB49-41C8-BA15-F62EE0BAB965}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28C81362-BB49-41C8-BA15-F62EE0BAB965}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D8B70A13-597A-4F81-AFCE-190CB954779A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B70A13-597A-4F81-AFCE-190CB954779A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B70A13-597A-4F81-AFCE-190CB954779A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D8B70A13-597A-4F81-AFCE-190CB954779A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B70A13-597A-4F81-AFCE-190CB954779A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B70A13-597A-4F81-AFCE-190CB954779A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
