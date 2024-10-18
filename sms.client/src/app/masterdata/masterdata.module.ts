@@ -5,13 +5,16 @@ import { NgbModalModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DepartmentListComponent } from './department-list/department-list.component';
 import { SharedModule } from '../shared/shared.module';
+import { DepartmentFormComponent } from './department-form/department-form.component';
+import { ValidityStyleDirective } from '../shared/directives/validity-style.directive';
 
 
 
 
 @NgModule({
   declarations: [
-    DepartmentListComponent
+    DepartmentListComponent,
+    DepartmentFormComponent
 
 
   ],
@@ -22,7 +25,6 @@ import { SharedModule } from '../shared/shared.module';
     ReactiveFormsModule,
     FormsModule,
     NgbModalModule,
-    SharedModule
 
   ]
 })
