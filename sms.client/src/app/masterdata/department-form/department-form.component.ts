@@ -9,7 +9,6 @@ import { Location } from '@angular/common';
 import { Department } from '../../core/models/department.model';
 import { DepartmentService } from '../../core/services/department.service';
 import { BaseFormComponent } from '../../shared/components/base-form-component';
-import { CustomValidators } from '../../shared/custom-validators/custom-validators';
 import { EnumLookupItem } from '../../shared/models/lookup-item';
 import { EnumLookupService } from '../../shared/services/enum-lookup.service';
 

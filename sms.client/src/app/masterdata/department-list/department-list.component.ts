@@ -5,7 +5,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { DepartmentService } from '../../core/services/department.service';
 import { MessageBoxService } from '../../shared/services/message-box.service';
 import { first } from 'rxjs';
-import { PagetitleComponent } from '../../shared/components/pagetitle/pagetitle.component';
 
 @Component({
   selector: 'app-department-list',

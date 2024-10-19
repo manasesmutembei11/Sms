@@ -6,7 +6,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagetitleComponent } from './components/pagetitle/pagetitle.component';
 import { ValidityStyleDirective } from './directives/validity-style.directive';
 import { ErrorDisplayComponent } from './components/error-display/error-display.component';
-import { MasterdataModule } from '../masterdata/masterdata.module';
 
 
 @NgModule({
@@ -15,11 +14,18 @@ import { MasterdataModule } from '../masterdata/masterdata.module';
 
     ValidityStyleDirective,
     PagetitleComponent,
-    ErrorDisplayComponent
+    ErrorDisplayComponent,
+    PagetitleComponent,
+    ErrorDisplayComponent,
+    ValidityStyleDirective
+
 
   ],
-  imports: [CommonModule, ReactiveFormsModule, FormsModule, MasterdataModule],
+  imports: [CommonModule, ReactiveFormsModule, FormsModule],
   exports: [
+    PagetitleComponent,
+    ErrorDisplayComponent,
+    ValidityStyleDirective
 
 
   ],
