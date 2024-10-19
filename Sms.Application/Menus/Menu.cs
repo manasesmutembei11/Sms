@@ -31,20 +31,7 @@ namespace Sms.Application.Menus
                         ParentId = 5,
                         Permissions = new List<string> { Permissions.AppTaskPermision.Add }
                     },
-                     new MenuItem
-                    {
-                        Label = "My Task List",
-                        Link = "/ops-task/task",
-                        ParentId = 5,
-                        Permissions = new List<string> { Permissions.AppTaskPermision.View }
-                    },
-                      new MenuItem
-                    {
-                        Label = "Task List",
-                        Link = "/ops-task/task/all",
-                        ParentId = 5,
-                        Permissions = new List<string> { Permissions.AppTaskPermision.ViewAll }
-                    },
+             
                 };
                 list.Add(taskMenu);
 
@@ -57,20 +44,7 @@ namespace Sms.Application.Menus
                 };
                 assessmentMenu.SubItems = new List<MenuItem>
                 {
-                     new MenuItem
-                    {
-                        Label = "List",
-                        Link = "/ops-asmt/assessment",
-                        ParentId = 5,
-                        Permissions = new List<string> { Permissions.AssessmentPermision.View }
-                    },
-                      new MenuItem
-                    {
-                        Label = "Pending Review",
-                        Link = "/ops-asmt/assessment/pending-review",
-                        ParentId = 5,
-                        Permissions = new List<string> { Permissions.AssessmentPermision.Review }
-                    },
+  
                 };
                 list.Add(assessmentMenu);
 
@@ -136,42 +110,6 @@ namespace Sms.Application.Menus
                         ParentId = 99,
                         Permissions = new List<string> { Permissions.VehicleMasterData.AddPart }
                     },
-                    new MenuItem
-                    {
-                        Label = "Vehicle Makes",
-                        Link = "/masterdata/vehicle-make",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-                     new MenuItem
-                    {
-                        Label = "Vehicle Model Parts",
-                        Link = "/masterdata/vehicle-model-part",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-                   
-                      new MenuItem
-                    {
-                        Label = "Vehicle Categories",
-                        Link = "/masterdata/vehicle-category",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Vehicle Colors",
-                        Link = "/masterdata/vehicle-color",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Import Parts Template",
-                        Link = "/masterdata/import-part-template",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
 
                 };
                 list.Add(vehicleDataMenu);
@@ -191,65 +129,7 @@ namespace Sms.Application.Menus
                         Link = "/masterdata/client",
                         ParentId = 99,
                         Permissions = new List<string> { Permissions.AccountMasterData.View }
-                    },
-                     new MenuItem
-                    {
-                        Label = "Assessors",
-                        Link = "/masterdata/asessor",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.AccountMasterData.View }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Areas",
-                        Link = "/masterdata/area",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.MasterData.View }
-                    },                 
-                     new MenuItem
-                    {
-                        Label = "Taxes",
-                        Link = "/masterdata/tax",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.MasterData.View }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Charges",
-                        Link = "/masterdata/charge",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.MasterData.View }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Survey Items",
-                        Link = "/masterdata/survey-item",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.MasterData.View }
-                    },
-                     new MenuItem
-                    {
-                        Label = "Part Categories",
-                        Link = "/masterdata/part-category",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-                     new MenuItem
-                    {
-                        Label = "Parts",
-                        Link = "/masterdata/part",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-
-                    new MenuItem
-                    {
-                        Label = "Part Conditions",
-                        Link = "/masterdata/part-condition",
-                        ParentId = 99,
-                        Permissions = new List<string> { Permissions.VehicleMasterData.View }
-                    },
-                   
+                    },                   
 
 
                 };
@@ -299,50 +179,7 @@ namespace Sms.Application.Menus
                         ParentId = 97,
                         Permissions = new List<string> { Permissions.Setting.Update }
                     },
-                    new MenuItem
-                    {
-                        Label = "Upload Types",
-                        Link = "/settings/upload-type",
-                        ParentId = 97,
-                        Permissions = new List<string> { Permissions.Setting.Update }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Upload Configuration",
-                        Link = "/settings/upload-config",
-                        ParentId = 97,
-                        Permissions = new List<string> { Permissions.Setting.Update }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Configuration Options",
-                        Link = "/settings/config-options",
-                        ParentId = 97,
-                        Permissions = new List<string> { Permissions.Setting.Update }
-                    },
-
-
-                    new MenuItem
-                    {
-                        Label = "Document Templates",
-                        Link = "/settings/document-template",
-                        ParentId = 97,
-                        Permissions = new List<string> { Permissions.Setting.Update }
-                    },                   
-                    new MenuItem
-                    {
-                        Label = "Notifications",
-                        Link = "/settings/notification",
-                        ParentId = 97,
-                        Permissions = new List<string> { Permissions.Setting.Update }
-                    },
-                    new MenuItem
-                    {
-                        Label = "Group Contacts",
-                        Link = "/settings/group-contact",
-                        ParentId = 97,
-                        Permissions = new List<string> { Permissions.Setting.Update }
-                    },
+                
 
 
                 };
