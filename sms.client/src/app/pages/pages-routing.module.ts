@@ -5,7 +5,7 @@ import { HomeComponent } from '../home/home/home.component';
 
 
 const routes: Routes = [
-  { path: 'masterdata', loadChildren: () => import('./masterdata/masterdata.module').then(m => m.MasterdataModule) },
+  { path: 'masterdata', loadChildren: () => import('../masterdata/masterdata.module').then(m => m.MasterdataModule) },
 
 
 ];

@@ -508,7 +508,7 @@
               "RelativeDocumentMoniker": "Sms.Application\\Menus\\Menu.cs",
               "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Menus\\Menu.cs",
               "RelativeToolTip": "Sms.Application\\Menus\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAQwLsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-31T00:33:21.737Z",
               "EditorCaption": ""
@@ -533,9 +533,10 @@
               "RelativeDocumentMoniker": "Sms.Application\\Menus\\MenuItem.cs",
               "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Menus\\MenuItem.cs",
               "RelativeToolTip": "Sms.Application\\Menus\\MenuItem.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwAUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:33:42.935Z"
+              "WhenOpened": "2024-08-31T00:33:42.935Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

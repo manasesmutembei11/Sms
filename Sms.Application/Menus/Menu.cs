@@ -188,7 +188,7 @@ namespace Sms.Application.Menus
                     new MenuItem
                     {
                         Label = "Clients",
-                        Link = "/masterdata/client",
+                        Link = "/masterdata/department",
                         ParentId = 99,
                         Permissions = new List<string> { Permissions.AccountMasterData.View }
                     },

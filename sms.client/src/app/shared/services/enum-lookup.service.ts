@@ -8,7 +8,7 @@ import { EnumLookupItem } from '../models/responses/lookup-item';
 })
 export class EnumLookupService {
 
-    constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) { }
+    constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: "https://localhost:7117/") { }
 
     public documentTypeList = (): Observable<EnumLookupItem[]> => {
         return this.http.get<EnumLookupItem[]>(`${this.baseUrl}api/EnumLookup/DocumentTemplateList`);

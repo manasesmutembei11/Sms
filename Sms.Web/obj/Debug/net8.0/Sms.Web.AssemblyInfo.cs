@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sms.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec52c818c5485f3ce878b66f3bbecfd6a474ab9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2faa9547c8e0a1eab3f37f00add7ebab25d12419")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sms.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sms.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
