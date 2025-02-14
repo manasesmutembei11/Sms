@@ -34,6 +34,7 @@ namespace Sms.Application.Controllers.Masterdata
 
         [HttpGet("pagedlist")]
         //  [Authorize(Policy = Permissions.MasterData.View)]
+        [AllowAnonymous]
         public async Task<IActionResult> GetPagedList([FromQuery] PagingParameters pagingParameters)
         {
 
@@ -47,7 +48,7 @@ namespace Sms.Application.Controllers.Masterdata
         }
 
         [HttpGet("{id}")]
-        [Authorize(Policy = Permissions.MasterData.View)]
+       // [Authorize(Policy = Permissions.MasterData.View)]
         public async Task<IActionResult> GetById(Guid id)
         {
             try
@@ -105,7 +106,7 @@ namespace Sms.Application.Controllers.Masterdata
         }
 
         [HttpDelete("Delete/{id}")]
-        [Authorize(Permissions.MasterData.Delete)]
+       // [Authorize(Permissions.MasterData.Delete)]
         public async Task<IActionResult> Delete(Guid id)
         {
             var response = new BasicResponse();

@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "ZqoxbGE5yknMg59IKnyO2cKgTNNQMIBjh1NZJhR4frc=",
+  "Hash": "yt68W5rJpga2zLb7ZfdDkmOAxYKiDilIukKvHaspq04=",
   "Source": "Sms.Web",
   "BasePath": "_content/Sms.Web",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -111,8 +111,18 @@ try
             });
         }
     });
+    builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowReactApp",
+            policy =>
+            {
+                policy.WithOrigins("http://localhost:3000") // Allow React app
+                      .AllowAnyHeader()
+                      .AllowAnyMethod();
+            });
+    });
     //report configuration services
-  //  builder.Services.AddReportConfigurationServices();
+    //  builder.Services.AddReportConfigurationServices();
 
     // add mapping
     builder.Services.AddAutoMapper((opt, s) =>
@@ -159,6 +169,7 @@ try
     var app = builder.Build();
 
     app.MigrateDatabase();
+    app.UseCors("AllowReactApp");
 
     // Configure the HTTP request pipeline.
     if (!app.Environment.IsDevelopment())
