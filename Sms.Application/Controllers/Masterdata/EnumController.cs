@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Sms.Core.Domain.Entities.Masterdata;
 using Sms.Core.Domain.Entities.Notifications;
 using Sms.Core.Domain.Entities.Templates;
 using Sms.Core.Domain.Models;
@@ -52,7 +53,14 @@ namespace Sms.Application.Controllers.Masterdata
             var data = XpaEnumExtensions.GetEnumList<EmailAddressType>();
             return Ok(data);
         }
-     
+
+        [HttpGet("DisciplineActionList")]
+        public IActionResult GetDisciplineActionList()
+        {
+            var data = XpaEnumExtensions.GetEnumList<DisciplineActions>();
+            return Ok(data);
+        }
+
         [HttpGet("YearList")]
         public IActionResult GetYearList()
         {

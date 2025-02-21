@@ -35,12 +35,16 @@ namespace Sms.Application.Controllers.Masterdata
 
         }
 
-        [HttpGet("pagedlist")]
+        [HttpGet("pagedlist/{departmentId}")]
       //  [Authorize(Policy = Permissions.MasterData.View)]
-        public async Task<IActionResult> GetPagedList([FromQuery] PagingParameters pagingParameters)
+        public async Task<IActionResult> GetPagedList(Guid departmentId, [FromQuery] PagingParameters pagingParameters)
         {
-
-            var paged = await _repository.Asset.GetPagedListAsync(pagingParameters, true);
+            var predicate = PredicateBuilder.New<Asset>(s => s.DepartmentId == departmentId);
+            if (!string.IsNullOrWhiteSpace(pagingParameters.Search))
+            {
+                predicate = predicate.And(s => s.Code.Contains(pagingParameters.Search));
+            }
+            var paged = await _repository.Asset.GetPagedListAsync(predicate, pagingParameters, true);
             var data = new PagedList<AssetDTO>(
                 paged.Data.Select(s => _mapper.Map<AssetDTO>(s)).ToList(),
                 paged.MetaData.TotalCount,
@@ -50,7 +54,7 @@ namespace Sms.Application.Controllers.Masterdata
         }
 
         [HttpGet("{id}")]
-        [Authorize(Policy = Permissions.MasterData.View)]
+       // [Authorize(Policy = Permissions.MasterData.View)]
         public async Task<IActionResult> GetById(Guid id)
         {
             try
@@ -108,7 +112,7 @@ namespace Sms.Application.Controllers.Masterdata
         }
 
         [HttpDelete("Delete/{id}")]
-        [Authorize(Permissions.MasterData.Delete)]
+       // [Authorize(Permissions.MasterData.Delete)]
         public async Task<IActionResult> Delete(Guid id)
         {
             var response = new BasicResponse();

@@ -34,11 +34,16 @@
   {
     "ContainingType": "Sms.Application.Controllers.Masterdata.AssetController",
     "Method": "GetPagedList",
-    "RelativePath": "api/Asset/pagedlist",
+    "RelativePath": "api/Asset/pagedlist/{departmentId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
       {
         "Name": "Search",
         "Type": "System.String",
@@ -435,6 +440,16 @@
     "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
     "Method": "GetAppNotificationTypeLookupList",
     "RelativePath": "api/EnumLookup/AppNotificationTypeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetDisciplineActionList",
+    "RelativePath": "api/EnumLookup/DisciplineActionList",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

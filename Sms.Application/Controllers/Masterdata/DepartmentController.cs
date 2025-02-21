@@ -37,7 +37,6 @@ namespace Sms.Application.Controllers.Masterdata
         [AllowAnonymous]
         public async Task<IActionResult> GetPagedList([FromQuery] PagingParameters pagingParameters)
         {
-
             var paged = await _repository.Department.GetPagedListAsync(pagingParameters, true);
             var data = new PagedList<DepartmentDTO>(
                 paged.Data.Select(s => _mapper.Map<DepartmentDTO>(s)).ToList(),
