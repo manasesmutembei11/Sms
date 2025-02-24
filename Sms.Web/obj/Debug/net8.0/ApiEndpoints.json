@@ -795,11 +795,16 @@
   {
     "ContainingType": "Sms.Application.Controllers.Masterdata.StudentController",
     "Method": "GetPagedList",
-    "RelativePath": "api/Student/pagedlist",
+    "RelativePath": "api/Student/pagedlist/{roomId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "roomId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
       {
         "Name": "Search",
         "Type": "System.String",

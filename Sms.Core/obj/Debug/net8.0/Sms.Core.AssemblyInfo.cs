@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sms.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f59936464e818890c15c4e93e22a18302a7e1847")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+152a17d9d85a85b2cdda3cf7423bb81472addb1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sms.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sms.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

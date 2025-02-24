@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "C:\\LEARN\\Sms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\dtos\\masterdata\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\dtos\\masterdata\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\mapping\\dtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\mapping\\dtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\repositories\\masterdata\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\repositories\\masterdata\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\entities\\masterdata\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\repositories\\masterdata\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\repositories\\masterdata\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\migrations\\20250224112930_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\migrations\\20250224112930_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAE1C09-1CB7-44C2-928D-59FC9F9D4E6D}|Sms.Web\\Sms.Web.csproj|c:\\learn\\sms\\sms.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2DAE1C09-1CB7-44C2-928D-59FC9F9D4E6D}|Sms.Web\\Sms.Web.csproj|solutionrelative:sms.web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DAE1C09-1CB7-44C2-928D-59FC9F9D4E6D}|Sms.Web\\Sms.Web.csproj|c:\\learn\\sms\\sms.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DAE1C09-1CB7-44C2-928D-59FC9F9D4E6D}|Sms.Web\\Sms.Web.csproj|solutionrelative:sms.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\configurations\\masterdata\\roomconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\ef\\configurations\\masterdata\\roomconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\entities\\masterdata\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\di\\datarepositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\di\\datarepositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\entities\\masterdata\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\ef\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\ef\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\dtos\\masterdata\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\dtos\\masterdata\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\mapping\\dtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\mapping\\dtomappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\entities\\masterdata\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,28 +67,12 @@
       "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\countycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\dtos\\masterdata\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\dtos\\masterdata\\subjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\enumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\enumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\assetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DAE1C09-1CB7-44C2-928D-59FC9F9D4E6D}|Sms.Web\\Sms.Web.csproj|c:\\learn\\sms\\sms.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DAE1C09-1CB7-44C2-928D-59FC9F9D4E6D}|Sms.Web\\Sms.Web.csproj|solutionrelative:sms.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\menus\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,20 +123,12 @@
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\repositories\\masterdata\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\repositories\\masterdata\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\repositories\\masterdata\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\repositories\\masterdata\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\repositories\\masterdata\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\entities\\masterdata\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\masterdata\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\controllers\\masterdata\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\controllers\\masterdata\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|c:\\learn\\sms\\sms.core\\domain\\repositories\\masterdata\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,14 +165,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|c:\\learn\\sms\\sms.application\\dtos\\masterdata\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEE53929-93FF-4446-8662-DCEFD2FDC25F}|Sms.Application\\Sms.Application.csproj|solutionrelative:sms.application\\dtos\\masterdata\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\di\\datarepositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\di\\datarepositorymodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\ef\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\configurations\\notifications\\appgroupcontactconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -299,14 +299,6 @@
       "RelativeMoniker": "D:0:0:{77D80F7C-BF6A-4F65-A6C0-6690621B8CDA}|Sms.Core\\Sms.Core.csproj|solutionrelative:sms.core\\domain\\entities\\userentities\\permissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\migrations\\20240831002322_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\migrations\\20240831002322_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\ef\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|c:\\learn\\sms\\sms.infracstructure\\data\\ef\\configurations\\masterdata\\teacherconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8695976F-EA53-4D20-B563-3AD44EF60153}|Sms.Infracstructure\\Sms.Infrastructure.csproj|solutionrelative:sms.infracstructure\\data\\ef\\configurations\\masterdata\\teacherconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -434,87 +426,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\Repositories\\Masterdata\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\Repositories\\Masterdata\\StudentRepository.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\Repositories\\Masterdata\\StudentRepository.cs*",
+              "RelativeToolTip": "Sms.Infracstructure\\Data\\Repositories\\Masterdata\\StudentRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:26:00.263Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SubjectDTO.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
-              "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:29:40.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SubjectController.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
-              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwGMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:32:37.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AssetController.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
-              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwCkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T19:11:08.939Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Menus\\MenuItem.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\Menus\\MenuItem.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Menus\\MenuItem.cs",
-              "RelativeToolTip": "Sms.Application\\Menus\\MenuItem.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:33:42.935Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TeacherDTO.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
-              "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:37:17.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TeacherController.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
-              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIBJwB0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:46:22.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Department.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Department.cs",
@@ -527,72 +460,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Asset.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Asset.cs",
-              "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Asset.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Asset.cs",
-              "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Asset.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T12:07:52.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
-              "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
-              "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:05:20.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Room.cs",
-              "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Room.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Room.cs",
-              "RelativeToolTip": "Sms.Core\\Domain\\Entities\\Masterdata\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:01:01.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "RoomConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\RoomConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\RoomConfiguration.cs",
               "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\RoomConfiguration.cs",
               "RelativeToolTip": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\RoomConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-30T23:23:02.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoomDTO.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\RoomDTO.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\RoomDTO.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\RoomDTO.cs",
-              "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\RoomDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T06:47:36.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "EnumController.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\EnumController.cs",
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\EnumController.cs",
@@ -604,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "DTOMappingProfile.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Mapping\\DTOMappingProfile.cs",
               "RelativeDocumentMoniker": "Sms.Application\\Mapping\\DTOMappingProfile.cs",
@@ -617,7 +498,198 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
+              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwEMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T07:19:26.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssetController.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
+              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\AssetController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwC4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T19:11:08.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs*",
+              "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T09:15:06.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubjectDTO.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
+              "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\SubjectDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:29:40.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\StudentController.cs*",
+              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\StudentController.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:20:51.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Web\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Sms.Web\\appsettings.Development.json",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Web\\appsettings.Development.json",
+              "RelativeToolTip": "Sms.Web\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-24T11:03:16.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250224112930_InitialCreate.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Migrations\\20250224112930_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Sms.Infracstructure\\Migrations\\20250224112930_InitialCreate.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Migrations\\20250224112930_InitialCreate.cs",
+              "RelativeToolTip": "Sms.Infracstructure\\Migrations\\20250224112930_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T11:29:30.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
+              "RelativeToolTip": "Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwB0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T10:03:40.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\SeedData.cs",
+              "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\SeedData.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\SeedData.cs",
+              "RelativeToolTip": "Sms.Infracstructure\\Data\\EF\\SeedData.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T00:14:43.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataRepositoryModule.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
+              "RelativeDocumentMoniker": "Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
+              "RelativeToolTip": "Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwCkAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:00:16.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Sms.Web\\Program.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Web\\Program.cs",
+              "RelativeToolTip": "Sms.Web\\Program.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAiwKsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T00:17:48.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
+              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\TeacherController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:46:22.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TeacherDTO.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
+              "RelativeToolTip": "Sms.Application\\DTOs\\Masterdata\\TeacherDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:37:17.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Menus\\MenuItem.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\Menus\\MenuItem.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Menus\\MenuItem.cs",
+              "RelativeToolTip": "Sms.Application\\Menus\\MenuItem.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T00:33:42.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SubjectController.cs",
+              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
+              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
+              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
+              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\SubjectController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwGMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:32:37.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\AuthController.cs",
@@ -629,19 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
-              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\StudentController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwG0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:20:51.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "CountyController.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\CountyController.cs",
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\CountyController.cs",
@@ -654,19 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Web\\Program.cs",
-              "RelativeDocumentMoniker": "Sms.Web\\Program.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Web\\Program.cs",
-              "RelativeToolTip": "Sms.Web\\Program.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAiwKsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:17:48.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\DepartmentController.cs",
@@ -678,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "StaffDTO.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\StaffDTO.cs",
               "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\StaffDTO.cs",
@@ -690,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "StaffController.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\StaffController.cs",
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\StaffController.cs",
@@ -702,19 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs",
-              "RelativeToolTip": "Sms.Core\\Domain\\Repositories\\Masterdata\\IStudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T09:15:06.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Teacher.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Teacher.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Teacher.cs",
@@ -726,19 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
-              "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
-              "RelativeToolTip": "Sms.Application\\Controllers\\Masterdata\\RoomController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T07:19:26.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "AssetDTO.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\AssetDTO.cs",
               "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\AssetDTO.cs",
@@ -750,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Subject.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Subject.cs",
@@ -762,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "ITeacherRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\ITeacherRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\ITeacherRepository.cs",
@@ -774,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "IStaffRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IStaffRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\IStaffRepository.cs",
@@ -786,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "ISubjectRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\ISubjectRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\ISubjectRepository.cs",
@@ -798,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "IDisciplineRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IDisciplineRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\IDisciplineRepository.cs",
@@ -834,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "IRoomRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IRoomRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\IRoomRepository.cs",
@@ -846,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "Staff.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\Staff.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\Staff.cs",
@@ -858,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "DisciplineDTO.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\DisciplineDTO.cs",
               "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\DisciplineDTO.cs",
@@ -870,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "DisciplineController .cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\Controllers\\Masterdata\\DisciplineController .cs",
               "RelativeDocumentMoniker": "Sms.Application\\Controllers\\Masterdata\\DisciplineController .cs",
@@ -882,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "CountyDTO.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\CountyDTO.cs",
               "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\CountyDTO.cs",
@@ -894,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "ICountyRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\ICountyRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\ICountyRepository.cs",
@@ -906,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\Masterdata\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\Masterdata\\IDepartmentRepository.cs",
@@ -918,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "County.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Masterdata\\County.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Masterdata\\County.cs",
@@ -930,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "DepartmentDTO.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\DepartmentDTO.cs",
               "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\DepartmentDTO.cs",
@@ -975,30 +999,6 @@
               "ViewState": "AgIAAGoAAAAAAAAAAAAkwIwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-31T22:18:58.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "DataRepositoryModule.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
-              "RelativeDocumentMoniker": "Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
-              "RelativeToolTip": "Sms.Infracstructure\\DI\\DataRepositoryModule.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwCkAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:00:16.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
-              "RelativeToolTip": "Sms.Infracstructure\\Data\\EF\\AppDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwCIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T10:03:40.093Z"
             },
             {
               "$type": "Document",
@@ -1338,31 +1338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "20240831002322_Initial.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Migrations\\20240831002322_Initial.cs",
-              "RelativeDocumentMoniker": "Sms.Infracstructure\\Migrations\\20240831002322_Initial.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Migrations\\20240831002322_Initial.cs",
-              "RelativeToolTip": "Sms.Infracstructure\\Migrations\\20240831002322_Initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:23:22.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\SeedData.cs",
-              "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\SeedData.cs",
-              "ToolTip": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\SeedData.cs",
-              "RelativeToolTip": "Sms.Infracstructure\\Data\\EF\\SeedData.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:14:43.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 77,
               "Title": "DepartmentConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\DepartmentConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\DepartmentConfiguration.cs",
@@ -1374,7 +1350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 75,
               "Title": "StaffConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\StaffConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\StaffConfiguration.cs",
@@ -1386,7 +1362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 76,
               "Title": "AssetConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\AssetConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\AssetConfiguration.cs",
@@ -1398,7 +1374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 74,
               "Title": "TeacherConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\TeacherConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\TeacherConfiguration.cs",
@@ -1410,7 +1386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 78,
               "Title": "AccountDTO.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Application\\DTOs\\Masterdata\\AccountDTO.cs",
               "RelativeDocumentMoniker": "Sms.Application\\DTOs\\Masterdata\\AccountDTO.cs",
@@ -1422,7 +1398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 79,
               "Title": "SubjectConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\SubjectConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\SubjectConfiguration.cs",
@@ -1434,7 +1410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 80,
               "Title": "StudentConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\StudentConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\StudentConfiguration.cs",
@@ -1446,7 +1422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 81,
               "Title": "DisciplineConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\DisciplineConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\DisciplineConfiguration.cs",
@@ -1458,7 +1434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 82,
               "Title": "CountyConfiguration.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\CountyConfiguration.cs",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Data\\EF\\Configurations\\Masterdata\\CountyConfiguration.cs",
@@ -1470,7 +1446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 83,
               "Title": "IUserProvider.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Providers\\IUserProvider.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Providers\\IUserProvider.cs",
@@ -1482,7 +1458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 85,
               "Title": "DomainValidationException.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Util\\Validations\\DomainValidationException.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Util\\Validations\\DomainValidationException.cs",
@@ -1494,7 +1470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 86,
               "Title": "ReportGroup.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\ReportEntities\\ReportGroup.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\ReportEntities\\ReportGroup.cs",
@@ -1506,7 +1482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 89,
               "Title": "Upload.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Uploads\\Upload.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Uploads\\Upload.cs",
@@ -1518,7 +1494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 90,
               "Title": "OperationType.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Uploads\\OperationType.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Uploads\\OperationType.cs",
@@ -1530,7 +1506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 84,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\BaseEntity.cs",
@@ -1542,7 +1518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 88,
               "Title": "UploadConfig.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Uploads\\UploadConfig.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Uploads\\UploadConfig.cs",
@@ -1554,7 +1530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 87,
               "Title": "ReportGroupItem.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\ReportEntities\\ReportGroupItem.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\ReportEntities\\ReportGroupItem.cs",
@@ -1566,7 +1542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 91,
               "Title": "DocumentTemplate.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Templates\\DocumentTemplate.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Templates\\DocumentTemplate.cs",
@@ -1578,7 +1554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 92,
               "Title": "AppCounter.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Counters\\AppCounter.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Counters\\AppCounter.cs",
@@ -1590,7 +1566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 93,
               "Title": "ReportServerConfig.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\Configs\\ReportServerConfig.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\Configs\\ReportServerConfig.cs",
@@ -1602,7 +1578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 94,
               "Title": "AuditTrail.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Audit\\AuditTrail.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Audit\\AuditTrail.cs",
@@ -1614,7 +1590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 96,
               "Title": "Sms.Infrastructure.csproj",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Infracstructure\\Sms.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Sms.Infracstructure\\Sms.Infrastructure.csproj",
@@ -1626,7 +1602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 95,
               "Title": "PagingParameters.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Paging\\PagingParameters.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Paging\\PagingParameters.cs",
@@ -1638,7 +1614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 97,
               "Title": "Sms.Core.csproj",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Sms.Core.csproj",
               "RelativeDocumentMoniker": "Sms.Core\\Sms.Core.csproj",
@@ -1650,7 +1626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 99,
               "Title": "RequestParameters.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Paging\\RequestParameters.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Paging\\RequestParameters.cs",
@@ -1662,7 +1638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 100,
               "Title": "ReportGroupItemPagingParameters.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Paging\\ReportGroupItemPagingParameters.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Paging\\ReportGroupItemPagingParameters.cs",
@@ -1674,7 +1650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 101,
               "Title": "PagedList.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Paging\\PagedList.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Paging\\PagedList.cs",
@@ -1686,7 +1662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 102,
               "Title": "MetaData.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Paging\\MetaData.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Paging\\MetaData.cs",
@@ -1698,7 +1674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 98,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Repositories\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Repositories\\IRepositoryBase.cs",
@@ -1710,7 +1686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 103,
               "Title": "IAuditable.cs",
               "DocumentMoniker": "C:\\LEARN\\Sms\\Sms.Core\\Domain\\Entities\\IAuditable.cs",
               "RelativeDocumentMoniker": "Sms.Core\\Domain\\Entities\\IAuditable.cs",

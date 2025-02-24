@@ -397,9 +397,6 @@ namespace Sms.Infrastructure.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("StudentId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("UpdatedOn")
                         .HasColumnType("datetime2");
 
@@ -408,8 +405,6 @@ namespace Sms.Infrastructure.Migrations
                     b.HasIndex("Code")
                         .IsUnique()
                         .HasFilter("[Code] IS NOT NULL");
-
-                    b.HasIndex("StudentId");
 
                     b.ToTable("md_Rooms", (string)null);
                 });
@@ -505,9 +500,6 @@ namespace Sms.Infrastructure.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("StreamId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime>("UpdatedOn")
                         .HasColumnType("datetime2");
 
@@ -517,7 +509,7 @@ namespace Sms.Infrastructure.Migrations
                         .IsUnique()
                         .HasFilter("[Code] IS NOT NULL");
 
-                    b.HasIndex("StreamId");
+                    b.HasIndex("RoomId");
 
                     b.ToTable("md_Students", (string)null);
                 });
@@ -614,6 +606,271 @@ namespace Sms.Infrastructure.Migrations
                     b.HasIndex("SubjectId");
 
                     b.ToTable("md_Teachers", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppGroupContact", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ContactType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Phone")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContactType")
+                        .IsUnique();
+
+                    b.ToTable("sms_GroupContacts", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotification", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("EnableEmail")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("EnableSms")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Type")
+                        .IsUnique();
+
+                    b.ToTable("sms_Notifications", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationEmail", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Subject")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Template")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("sms_NotificationEmail", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationEmailContact", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AddressType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ContactType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("NotificationEmailId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NotificationEmailId");
+
+                    b.ToTable("sms_NotificationEmailContacts", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationSms", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Template")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("sms_NotificationSms", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationSmsContact", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ContactType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("NotificationSmsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NotificationSmsId");
+
+                    b.ToTable("sms_NotificationSmsContacts", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.OutgoingEmail", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AddressBcc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AddressCC")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AddressTo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AttachmentPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Body")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSent")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("NextRetry")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ProcessingInfo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RetryCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Subject")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("sms_OutgoingEmails", (string)null);
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.OutgoingEmailAttachment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DocumentType")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("EmailId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Path")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RefId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmailId");
+
+                    b.ToTable("sms_OutgoingEmailAttachments", (string)null);
                 });
 
             modelBuilder.Entity("Sms.Core.Domain.Entities.ReportEntities.ReportGroup", b =>
@@ -1061,17 +1318,6 @@ namespace Sms.Infrastructure.Migrations
                     b.Navigation("Department");
                 });
 
-            modelBuilder.Entity("Sms.Core.Domain.Entities.Masterdata.Room", b =>
-                {
-                    b.HasOne("Sms.Core.Domain.Entities.Masterdata.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Student");
-                });
-
             modelBuilder.Entity("Sms.Core.Domain.Entities.Masterdata.Staff", b =>
                 {
                     b.HasOne("Sms.Core.Domain.Entities.Masterdata.County", "County")
@@ -1095,7 +1341,9 @@ namespace Sms.Infrastructure.Migrations
                 {
                     b.HasOne("Sms.Core.Domain.Entities.Masterdata.Room", "Stream")
                         .WithMany()
-                        .HasForeignKey("StreamId");
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Stream");
                 });
@@ -1117,6 +1365,61 @@ namespace Sms.Infrastructure.Migrations
                     b.Navigation("Department");
 
                     b.Navigation("Subject");
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationEmail", b =>
+                {
+                    b.HasOne("Sms.Core.Domain.Entities.Notifications.AppNotification", "Notification")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Notification");
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationEmailContact", b =>
+                {
+                    b.HasOne("Sms.Core.Domain.Entities.Notifications.AppNotificationEmail", "NotificationEmail")
+                        .WithMany()
+                        .HasForeignKey("NotificationEmailId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("NotificationEmail");
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationSms", b =>
+                {
+                    b.HasOne("Sms.Core.Domain.Entities.Notifications.AppNotification", "Notification")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Notification");
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.AppNotificationSmsContact", b =>
+                {
+                    b.HasOne("Sms.Core.Domain.Entities.Notifications.AppNotificationSms", "NotificationSms")
+                        .WithMany()
+                        .HasForeignKey("NotificationSmsId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("NotificationSms");
+                });
+
+            modelBuilder.Entity("Sms.Core.Domain.Entities.Notifications.OutgoingEmailAttachment", b =>
+                {
+                    b.HasOne("Sms.Core.Domain.Entities.Notifications.OutgoingEmail", "Email")
+                        .WithMany()
+                        .HasForeignKey("EmailId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Email");
                 });
 
             modelBuilder.Entity("Sms.Core.Domain.Entities.ReportEntities.ReportGroupItem", b =>

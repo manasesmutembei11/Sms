@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LinqKit;
 
 namespace Sms.Application.Controllers.Masterdata
 {
@@ -32,12 +33,17 @@ namespace Sms.Application.Controllers.Masterdata
 
         }
 
-        [HttpGet("pagedlist")]
+        [HttpGet("pagedlist/{roomId}")]
         //  [Authorize(Policy = Permissions.MasterData.View)]
-        public async Task<IActionResult> GetPagedList([FromQuery] PagingParameters pagingParameters)
+        public async Task<IActionResult> GetPagedList(Guid roomId, [FromQuery] PagingParameters pagingParameters)
         {
+            var predicate = PredicateBuilder.New<Student>(s => s.RoomId == roomId);
+            if (!string.IsNullOrWhiteSpace(pagingParameters.Search))
+            {
+                predicate = predicate.And(s => s.Code.Contains(pagingParameters.Search));
+            }
 
-            var paged = await _repository.Student.GetPagedListAsync(pagingParameters, true);
+            var paged = await _repository.Student.GetPagedListAsync(predicate, pagingParameters, true);
             var data = new PagedList<StudentDTO>(
                 paged.Data.Select(s => _mapper.Map<StudentDTO>(s)).ToList(),
                 paged.MetaData.TotalCount,

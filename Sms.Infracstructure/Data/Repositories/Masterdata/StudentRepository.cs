@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Sms.Infrastructure.Data.Repositories.Masterdata
 {
@@ -17,14 +18,10 @@ namespace Sms.Infrastructure.Data.Repositories.Masterdata
         public StudentRepository(AppDbContext context) : base(context)
         {
         }
-        public Task<PagedList<Student>> GetPagedListAsync(PagingParameters pagingParameters, bool trackChanges)
+        public Task<PagedList<Student>> GetPagedListAsync(Expression<Func<Student, bool>> expression, PagingParameters pagingParameters, bool trackChanges)
         {
-            var predicate = PredicateBuilder.New<Student>(true);
-            if (!string.IsNullOrWhiteSpace(pagingParameters.Search))
-            {
-                predicate = predicate.And(s => s.Code.Contains(pagingParameters.Search) || s.FirstName.Contains(pagingParameters.Search));
-            }
-            var data = FindByCondition(predicate, trackChanges).OrderBy(s => s.Code);
+          
+            var data = FindByCondition(expression, trackChanges).OrderBy(s => s.Code);
             return PagedList<Student>.ToPagedListAsync(data, pagingParameters.PageNumber, pagingParameters.PageSize);
         }
         public override void Delete(Student item)

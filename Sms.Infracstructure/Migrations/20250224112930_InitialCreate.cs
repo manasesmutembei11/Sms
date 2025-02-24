@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Sms.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -103,6 +103,23 @@ namespace Sms.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "md_Rooms",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_md_Rooms", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "md_Subjects",
                 columns: table => new
                 {
@@ -135,6 +152,66 @@ namespace Sms.Infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_s_DocumentTemplates", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "sms_GroupContacts",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    Phone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    ContactType = table.Column<int>(type: "int", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_sms_GroupContacts", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "sms_Notifications",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Type = table.Column<int>(type: "int", nullable: false),
+                    EnableEmail = table.Column<bool>(type: "bit", nullable: false),
+                    EnableSms = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_sms_Notifications", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "sms_OutgoingEmails",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Subject = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
+                    Body = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsSent = table.Column<bool>(type: "bit", nullable: false),
+                    IsLocked = table.Column<bool>(type: "bit", nullable: false),
+                    AddressTo = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AddressCC = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AttachmentPath = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AddressBcc = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RetryCount = table.Column<int>(type: "int", nullable: false),
+                    NextRetry = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ProcessingInfo = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_sms_OutgoingEmails", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -306,6 +383,33 @@ namespace Sms.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "md_Students",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    FirstName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    ParentEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ParentPhone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ParentName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RoomId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_md_Students", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_md_Students_md_Rooms_RoomId",
+                        column: x => x.RoomId,
+                        principalTable: "md_Rooms",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "md_Teachers",
                 columns: table => new
                 {
@@ -338,6 +442,73 @@ namespace Sms.Infrastructure.Migrations
                         principalTable: "md_Subjects",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "sms_NotificationEmail",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Subject = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    Template = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_sms_NotificationEmail", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_sms_NotificationEmail_sms_Notifications_Id",
+                        column: x => x.Id,
+                        principalTable: "sms_Notifications",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "sms_NotificationSms",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Template = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_sms_NotificationSms", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_sms_NotificationSms_sms_Notifications_Id",
+                        column: x => x.Id,
+                        principalTable: "sms_Notifications",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "sms_OutgoingEmailAttachments",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    EmailId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    RefId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DocumentType = table.Column<int>(type: "int", nullable: false),
+                    Path = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_sms_OutgoingEmailAttachments", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_sms_OutgoingEmailAttachments_sms_OutgoingEmails_EmailId",
+                        column: x => x.EmailId,
+                        principalTable: "sms_OutgoingEmails",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -544,48 +715,48 @@ namespace Sms.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "md_Rooms",
+                name: "sms_NotificationEmailContacts",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Code = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
-                    StudentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ContactType = table.Column<int>(type: "int", nullable: false),
+                    AddressType = table.Column<int>(type: "int", nullable: false),
+                    NotificationEmailId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_md_Rooms", x => x.Id);
+                    table.PrimaryKey("PK_sms_NotificationEmailContacts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_sms_NotificationEmailContacts_sms_NotificationEmail_NotificationEmailId",
+                        column: x => x.NotificationEmailId,
+                        principalTable: "sms_NotificationEmail",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
-                name: "md_Students",
+                name: "sms_NotificationSmsContacts",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Code = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    FirstName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    LastName = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
-                    ParentEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ParentPhone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ParentName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RoomId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    StreamId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    ContactType = table.Column<int>(type: "int", nullable: false),
+                    NotificationSmsId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_md_Students", x => x.Id);
+                    table.PrimaryKey("PK_sms_NotificationSmsContacts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_md_Students_md_Rooms_StreamId",
-                        column: x => x.StreamId,
-                        principalTable: "md_Rooms",
-                        principalColumn: "Id");
+                        name: "FK_sms_NotificationSmsContacts_sms_NotificationSms_NotificationSmsId",
+                        column: x => x.NotificationSmsId,
+                        principalTable: "sms_NotificationSms",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
@@ -638,11 +809,6 @@ namespace Sms.Infrastructure.Migrations
                 filter: "[Code] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_md_Rooms_StudentId",
-                table: "md_Rooms",
-                column: "StudentId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_md_Staff_Code",
                 table: "md_Staff",
                 column: "Code",
@@ -667,9 +833,9 @@ namespace Sms.Infrastructure.Migrations
                 filter: "[Code] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_md_Students_StreamId",
+                name: "IX_md_Students_RoomId",
                 table: "md_Students",
-                column: "StreamId");
+                column: "RoomId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_md_Subjects_Code",
@@ -694,6 +860,33 @@ namespace Sms.Infrastructure.Migrations
                 name: "IX_md_Teachers_SubjectId",
                 table: "md_Teachers",
                 column: "SubjectId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_sms_GroupContacts_ContactType",
+                table: "sms_GroupContacts",
+                column: "ContactType",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_sms_NotificationEmailContacts_NotificationEmailId",
+                table: "sms_NotificationEmailContacts",
+                column: "NotificationEmailId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_sms_Notifications_Type",
+                table: "sms_Notifications",
+                column: "Type",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_sms_NotificationSmsContacts_NotificationSmsId",
+                table: "sms_NotificationSmsContacts",
+                column: "NotificationSmsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_sms_OutgoingEmailAttachments_EmailId",
+                table: "sms_OutgoingEmailAttachments",
+                column: "EmailId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_sms_RoleClaims_RoleId",
@@ -755,23 +948,11 @@ namespace Sms.Infrastructure.Migrations
                 name: "IX_xpa_Reports_GroupId",
                 table: "xpa_Reports",
                 column: "GroupId");
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_md_Rooms_md_Students_StudentId",
-                table: "md_Rooms",
-                column: "StudentId",
-                principalTable: "md_Students",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_md_Rooms_md_Students_StudentId",
-                table: "md_Rooms");
-
             migrationBuilder.DropTable(
                 name: "app_configs");
 
@@ -788,10 +969,25 @@ namespace Sms.Infrastructure.Migrations
                 name: "md_Staff");
 
             migrationBuilder.DropTable(
+                name: "md_Students");
+
+            migrationBuilder.DropTable(
                 name: "md_Teachers");
 
             migrationBuilder.DropTable(
                 name: "s_DocumentTemplates");
+
+            migrationBuilder.DropTable(
+                name: "sms_GroupContacts");
+
+            migrationBuilder.DropTable(
+                name: "sms_NotificationEmailContacts");
+
+            migrationBuilder.DropTable(
+                name: "sms_NotificationSmsContacts");
+
+            migrationBuilder.DropTable(
+                name: "sms_OutgoingEmailAttachments");
 
             migrationBuilder.DropTable(
                 name: "sms_RoleClaims");
@@ -830,10 +1026,22 @@ namespace Sms.Infrastructure.Migrations
                 name: "md_Counties");
 
             migrationBuilder.DropTable(
+                name: "md_Rooms");
+
+            migrationBuilder.DropTable(
                 name: "md_Department");
 
             migrationBuilder.DropTable(
                 name: "md_Subjects");
+
+            migrationBuilder.DropTable(
+                name: "sms_NotificationEmail");
+
+            migrationBuilder.DropTable(
+                name: "sms_NotificationSms");
+
+            migrationBuilder.DropTable(
+                name: "sms_OutgoingEmails");
 
             migrationBuilder.DropTable(
                 name: "sms_Roles");
@@ -848,10 +1056,7 @@ namespace Sms.Infrastructure.Migrations
                 name: "sms_Users");
 
             migrationBuilder.DropTable(
-                name: "md_Students");
-
-            migrationBuilder.DropTable(
-                name: "md_Rooms");
+                name: "sms_Notifications");
         }
     }
 }
