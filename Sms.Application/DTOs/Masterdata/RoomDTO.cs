@@ -13,7 +13,5 @@ namespace Sms.Application.DTOs.Masterdata
         public string Code { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public Guid StudentId { get; set; }
-        public string StudentName { get; set; } = string.Empty;
     }
 }

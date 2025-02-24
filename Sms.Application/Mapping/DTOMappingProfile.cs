@@ -61,9 +61,7 @@ namespace Sms.Application.Mapping
             CreateMap<County, CountyDTO>().ReverseMap();
             CreateMap<Discipline, DisciplineDTO>()
                 .ForMember(dest => dest.DisciplineActionName, opt => opt.MapFrom(src => src.Actions.ToDescription())).ReverseMap();
-            CreateMap<Room, RoomDTO>()
-                .ForMember(dest => dest.StudentName, opt => opt.MapFrom(src => src.Student.FirstName)).ReverseMap()
-                .ForMember(x => x.Student, opt => opt.Ignore());
+            CreateMap<Room, RoomDTO>().ReverseMap();
             CreateMap<Staff, StaffDTO>()
                .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Department.Name))
                .ForMember(dest => dest.CountyName, opt => opt.MapFrom(src => src.County.Name)).ReverseMap()
