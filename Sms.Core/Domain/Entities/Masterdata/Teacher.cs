@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sms.Core.Domain.Entities.Masterdata
 {
-    public enum Type
+    public enum TeacherType
     {
         HeadTeather = 0,
         Permanent = 1,
@@ -21,7 +21,7 @@ namespace Sms.Core.Domain.Entities.Masterdata
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string PhysicalAddress { get; set; }
-        public Type Type { get; set; }
+        public TeacherType Type { get; set; }
         public Guid SubjectId { get; set; }
         public virtual Subject Subject { get; set; }
         public Guid DepartmentId { get; set; }

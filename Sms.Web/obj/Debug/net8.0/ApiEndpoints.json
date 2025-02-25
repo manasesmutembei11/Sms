@@ -478,6 +478,16 @@
   },
   {
     "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
+    "Method": "GetTeacherTypeList",
+    "RelativePath": "api/EnumLookup/TeacherTypeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sms.Application.Controllers.Masterdata.EnumLookupController",
     "Method": "GetYearList",
     "RelativePath": "api/EnumLookup/YearList",
     "HttpMethod": "GET",
@@ -948,11 +958,16 @@
   {
     "ContainingType": "Sms.Application.Controllers.Masterdata.TeacherController",
     "Method": "GetPagedList",
-    "RelativePath": "api/Teacher/pagedlist",
+    "RelativePath": "api/Teacher/pagedlist/{departmentId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
       {
         "Name": "Search",
         "Type": "System.String",

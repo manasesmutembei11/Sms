@@ -61,6 +61,13 @@ namespace Sms.Application.Controllers.Masterdata
             return Ok(data);
         }
 
+        [HttpGet("TeacherTypeList")]
+        public IActionResult GetTeacherTypeList()
+        {
+            var data = XpaEnumExtensions.GetEnumList<TeacherType>();
+            return Ok(data);
+        }
+
         [HttpGet("YearList")]
         public IActionResult GetYearList()
         {
